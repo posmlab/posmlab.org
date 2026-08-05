@@ -8,7 +8,7 @@ highlighter: rouge
 
 markdown: kramdown
 
-repository: drummondlab/drummondlab.github.io
+repository: posmlab/posmlab.org
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -69,7 +69,7 @@ JB :
   #   - Only the following values are falsy: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH : https://github.posmlab.io/posmlab.org
+  BASE_PATH : https://posmlab.github.io/posmlab.org
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
