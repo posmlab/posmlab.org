@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Protocols"
-description: "Drummond Lab experimental protocols"
+description: "posmlabexperimental protocols"
 group: subnavigation
 navorder: 6
 ---
@@ -11,18 +11,18 @@ navorder: 6
 
 	{% if paginator.previous_page %}
 		{% if paginator.previous_page == 1 %}
-		<a class="prev" href="/{{ page.category }}/">
+		<a class="prev" href="/{{ page.category | relative_url }}/">
 			<i class="fa fa-chevron-left fa-lg"></i>
 		</a>
 		{% else %}
-		<a class="prev" href="/{{ page.category }}/page{{ paginator.previous_page }}">
+		<a class="prev" href="/{{ page.category | relative_url }}/page{{ paginator.previous_page }}">
 			<i class="fa fa-chevron-left fa-lg"></i>
 		</a>
 		{% endif %}
 	{% endif %}
 
 	{% if paginator.next_page %}
-	<a class="next" href="/{{ page.category }}/page{{ paginator.next_page }}">
+	<a class="next" href="/{{ page.category | relative_url }}/page{{ paginator.next_page }}">
 		<i class="fa fa-chevron-right fa-lg"></i>
 	</a>
 	{% endif %}
@@ -46,12 +46,12 @@ Here you'll find protocols from others that we've found useful and tweaked to ou
 		<div class="row">
 			<div class="col-md-12">
 				<div class="smallhead">
-					<a href="{{ protocol.url }}" class="off">{{ protocol.title }}</a>
+					<a href="{{ protocol.url | relative_url }}" class="off">{{ protocol.title }}</a>
 				</div>
 				<div class="smallnote">
 					{%comment%}{{ protocol.date | date_to_string }}{% endcomment %}
 					{% if author != 0 %}
-					by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+					by <a class="off" href="{{ author.url | relative_url }}">{{ author.handle }}</a>
 					{% endif %}
 				</div>
 				<div class="subtle smallnote">
