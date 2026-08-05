@@ -28,12 +28,12 @@ navorder: 3
       </div>
       {% elsif paper.preprint %}
       <div class="media">
-        <a class="pull-right" href="{{ paper.url }}">
+        <a class="pull-right" href="{{ paper.url | relative_url }}">
           <img width=100 class="media-object" src="{{ paper.image | relative_url }}">
         </a>
         <div class="media-body">
             <div class="smallhead media-heading">
-            <a href="{{ paper.url }}" class="off">PREPRINT: {{ paper.title }}</a>
+            <a href="{{ paper.url | relative_url }}" class="off">PREPRINT: {{ paper.title }}</a>
             </div>
             <p class="note">{{ paper.shortref }}</p>
         </div>

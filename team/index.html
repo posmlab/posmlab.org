@@ -18,11 +18,11 @@ navorder: 2
 	{% endif %}
 	<div class="col-md-4 memberbox">
 		<div class="media">
-				<a class="pull-left" href="{{ member.url }}">
-				<img class="media-object member-photo" src="{{ member.image }}">
+				<a class="pull-left" href="{{ member.url | relative_url}}">
+				<img class="media-object member-photo" src="{{ member.image | relative_url }}">
 				</a>
 			 	<div class="media-body">
-				<div class="head media-heading member-name"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+				<div class="head media-heading member-name"><a href="{{ member.url | relative_url }}" class="off">{{ member.title }}</a></div>
 				<p class="note">{{ member.position }}</p>
 				</div>
 		</div>
