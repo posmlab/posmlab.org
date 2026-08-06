@@ -1,7 +1,7 @@
 ---
 layout: research
 title: "Research"
-description: "Research in the Drummond Lab"
+description: "Research in posmlab"
 group: navigation
 navorder: 1
 
@@ -15,32 +15,32 @@ sections:
       - authors: "Glauninger, Bard, Wong Hickernell _et al._"
         journal: "Molecular Cell"
         year: 2025
-        url: "{{ site.baseurl }}/papers/paper/rna-condensation"
+        url: "/papers/paper/rna-condensation"
         title: "Transcriptome-wide mRNP condensation precedes stress granule formation and excludes new mRNAs"
       - authors: "Keyport Kik _et al._"
         journal: "Nat. Commun."
         year: 2024
-        url: "{{ site.baseurl }}/papers/paper/conserved-condensation"
+        url: "/papers/paper/conserved-condensation"
         title: "An adaptive biomolecular condensation response is conserved across environmentally divergent species"
       - authors: "Glauninger _et al._"
         journal: "Molecular Cell"
         year: 2022
-        url: "{{ site.baseurl }}/papers/paper/stressful-steps"
+        url: "/papers/paper/stressful-steps"
         title: "Stressful steps: Progress and challenges in understanding stress-induced mRNA condensation and accumulation in stress granules"
       - authors: "Triandafillou _et al._"
         journal: "eLife"
         year: 2020
-        url: "{{ site.baseurl }}/papers/paper/intracellular-acidification-hsf1"
+        url: "/papers/paper/intracellular-acidification-hsf1"
         title: "Transient intracellular acidification regulates the core transcriptional heat shock response"
       - authors: "Riback, Katanski _et al._"
         journal: "Cell"
         year: 2017
-        url: "{{ site.baseurl }}/papers/paper/adaptive-phase-separation"
+        url: "/papers/paper/adaptive-phase-separation"
         title: "Stress-triggered phase separation is an adaptive, evolutionarily tuned response"
       - authors: "Wallace _et al._"
         journal: "Cell"
         year: 2015
-        url: "{{ site.baseurl }}/papers/paper/endogenous-aggregates"
+        url: "/papers/paper/endogenous-aggregates"
         title: "Reversible, specific, active aggregates of endogenous proteins assemble upon heat stress"
 
   - id: chaperones
@@ -52,12 +52,12 @@ sections:
       - authors: "Bard & Drummond"
         journal: "Frontiers in Biophysics"
         year: 2024
-        url: "{{ site.baseurl }}/papers/paper/chaperone-regulation-of-biomolecular-condensates"
+        url: "/papers/paper/chaperone-regulation-of-biomolecular-condensates"
         title: "Chaperone regulation of biomolecular condensates"
       - authors: "Yoo _et al._"
         journal: "Mol. Cell"
         year: 2022
-        url: "{{ site.baseurl }}/papers/paper/chaperones-efficiently-disperse-condensates"
+        url: "/papers/paper/chaperones-efficiently-disperse-condensates"
         title: "Chaperones directly and efficiently disperse stress-triggered biomolecular condensates"
 
   - id: temperature-sensing
@@ -69,22 +69,22 @@ sections:
       - authors: "Keyport Kik _et al._"
         journal: "Nat. Commun."
         year: 2024
-        url: "{{ site.baseurl }}/papers/paper/conserved-condensation"
+        url: "/papers/paper/conserved-condensation"
         title: "An adaptive biomolecular condensation response is conserved across environmentally divergent species"
       - authors: "Yoo _et al._"
         journal: "JBC"
         year: 2019
-        url: "{{ site.baseurl }}/papers/paper/cellular-sensing-by-phase-separation"
+        url: "/papers/paper/cellular-sensing-by-phase-separation"
         title: "Cellular sensing by phase separation: Using the process, not just the products"
       - authors: "Riback, Katanski _et al._"
         journal: "Cell"
         year: 2017
-        url: "{{ site.baseurl }}/papers/paper/adaptive-phase-separation"
+        url: "/papers/paper/adaptive-phase-separation"
         title: "Stress-triggered phase separation is an adaptive, evolutionarily tuned response"
       - authors: "Triandafillou _et al._"
         journal: "eLife"
         year: 2020
-        url: "{{ site.baseurl }}/papers/paper/intracellular-acidification-hsf1"
+        url: "/papers/paper/intracellular-acidification-hsf1"
         title: "Transient intracellular acidification regulates the core transcriptional heat shock response"
 ---
 **We study how cells sense and respond to changes in their environment.** Our particular interest has been in [**cellular stress responses**](#stress-response) where cells must rapidly and decisively respond to sudden maladaptive changes. In all cellular life, certain stresses such as heat shock and oxidative stress lead to similar phenomena: large clusters of proteins and RNA form, a powerful transcriptional response is induced, and translational activity is reduced and redirected toward newly produced transcripts. Many of these transcripts encode molecular chaperones, long thought to mainly help cells clean up misfolded proteins resulting from stress. A dominant interpretation has been that of *proteotoxic stress*: stress causes protein and RNA misfolding, cells respond inducing genes that encode chaperones, and chaperones help clean up misfolding.
