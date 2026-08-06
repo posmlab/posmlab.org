@@ -41,7 +41,7 @@ sections:
         journal: "Cell"
         year: 2015
         url: "/papers/paper/endogenous-aggregates"
-        title: "Reversible, specific, active aggregates of endogenous proteins assemble upon heat stress"
+        title: "Reversible,, active aggregates of endogenous proteins assemble upon heat stress"
 
   - id: chaperones
     title: "Molecular chaperones as condensation regulators"
