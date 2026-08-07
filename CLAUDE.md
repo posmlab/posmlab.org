@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Site Overview
 
-This is the Drummond Lab website (drummondlab.org), a Jekyll site deployed via GitHub Pages. Built on Jekyll Bootstrap 0.3.0 with Bootstrap 3, kramdown markdown, and a custom "lab" theme.
+This is the PoSM Lab website (posmlab.org) — the Physics of Soft Matter Lab of Prof. Mark Ilton in the Department of Physics at Harvey Mudd College. It's a Jekyll site deployed via GitHub Pages from the `gh-pages` branch of [posmlab/posmlab.org](https://github.com/posmlab/posmlab.org). Built on Jekyll Bootstrap 0.3.0 with Bootstrap 3, kramdown markdown, and a custom "lab" theme (originally developed by the Drummond Lab and reused here).
 
 ## Build & Preview Commands
 
@@ -22,14 +22,12 @@ rake paper title="Title" [date="YYYY-MM-DD"] [tags=[tag1,tag2]]      # New paper
 rake protocol title="Title" [date="YYYY-MM-DD"] [tags=[tag1,tag2]]   # New protocol in protocols/_posts/
 ```
 
-Team members and news items are created manually by copying an existing file and editing.
+Team members, news items, and projects are created manually by copying an existing file and editing.
 
 ## Git Workflow
 
-- Work on the `staging` branch (this is the default working branch)
-- Preview locally with `rake preview`
-- When ready to publish: merge `staging` into `master`, push `master`
-- GitHub Pages auto-deploys from `master`
+- The repository currently has a single branch, `gh-pages`, which is both the working branch and the branch GitHub Pages deploys from.
+- Preview locally with `rake preview` before pushing.
 
 ## Content Architecture
 
@@ -65,6 +63,7 @@ News and blog posts link to papers via `/papers/paper/nickname` and to team memb
 
 - Paper images: `assets/images/papers/`
 - Team photos: `assets/images/team/`
+- Project images: `assets/images/projects/`
 - News images: `assets/images/news/`
 - PDFs: `assets/pdfs/`
 
@@ -73,3 +72,4 @@ News and blog posts link to papers via `/papers/paper/nickname` and to team memb
 - The `published` field in paper frontmatter controls Jekyll rendering, not publication status; use `preprint` and `embargo` for that
 - The `handle` field on team members is used for cross-referencing (e.g., `author_handle` in news posts)
 - Permalink format is `/:categories/:title` (no date in URLs)
+- Site contact/PI: Mark Ilton (milton@hmc.edu), Department of Physics, Harvey Mudd College. Lab location: Galileo B101.

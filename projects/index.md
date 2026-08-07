@@ -6,89 +6,64 @@ group: navigation
 navorder: 1
 
 sections:
-  - id: stress-response
-    title: "Adaptive condensation in the stress response"
+  - id: lamsa
+    title: "Latch-mediated spring actuation (LaMSA)"
     image:
     description: |
-      We have shown that condensation of proteins and mRNAs during stress is adaptive, tuned by evolution, regulated by conserved molecular machinery, and key to understanding how cells nimbly sense and immediately respond to stressful conditions. Our most recent discovery of translation-initiation-inhibited condensates (TIICs, pronounced "ticks") reveals how cells change their mind: condensing pre-stress mRNAs and excluding new mRNAs encoding stress-specific adaptive programs.
+      Some organisms have a loading motor, spring, and latch built into their anatomy, and use this combination to perform ultra-fast movement. Mantis shrimp use elastic energy to drive their hammer-like appendages at speeds greater than 60 mph, fast enough to break open snail and crab shells. What's perhaps even more impressive is that the performance of some of these biological LaMSA systems exceeds that of current engineering capabilities for repeatable kinematic performance at small sizes. By understanding the physical principles that govern these systems, our aim is to contribute to a better understanding of the evolutionary dynamics of these organisms and to inform future engineering design.
     papers:
-      - authors: "Glauninger, Bard, Wong Hickernell _et al._"
-        journal: "Molecular Cell"
-        year: 2025
-        url: "/papers/paper/rna-condensation"
-        title: "Transcriptome-wide mRNP condensation precedes stress granule formation and excludes new mRNAs"
-      - authors: "Keyport Kik _et al._"
-        journal: "Nat. Commun."
-        year: 2024
-        url: "/papers/paper/conserved-condensation"
-        title: "An adaptive biomolecular condensation response is conserved across environmentally divergent species"
-      - authors: "Glauninger _et al._"
-        journal: "Molecular Cell"
-        year: 2022
-        url: "/papers/paper/stressful-steps"
-        title: "Stressful steps: Progress and challenges in understanding stress-induced mRNA condensation and accumulation in stress granules"
-      - authors: "Triandafillou _et al._"
-        journal: "eLife"
-        year: 2020
-        url: "/papers/paper/intracellular-acidification-hsf1"
-        title: "Transient intracellular acidification regulates the core transcriptional heat shock response"
-      - authors: "Riback, Katanski _et al._"
-        journal: "Cell"
-        year: 2017
-        url: "/papers/paper/adaptive-phase-separation"
-        title: "Stress-triggered phase separation is an adaptive, evolutionarily tuned response"
-      - authors: "Wallace _et al._"
-        journal: "Cell"
-        year: 2015
-        url: "/papers/paper/endogenous-aggregates"
-        title: "Reversible,, active aggregates of endogenous proteins assemble upon heat stress"
-
-  - id: chaperones
-    title: "Molecular chaperones as condensation regulators"
-    image:
-    description: |
-      Molecular chaperones are best known for helping proteins fold. We study the ways in which chaperones also play a major role in regulating biomolecular condensation. Chaperones can disperse condensates, reshape their composition, and control their formation. We discovered that biochemically, chaperones are far more proficient at dispersing condensates than at disaggregating misfolded proteins. Understanding how chaperones work, how they are regulated, and how they engage their endogenous substrates including stress-triggered condensates, are major focus areas for the group.
-    papers:
-      - authors: "Bard & Drummond"
-        journal: "Frontiers in Biophysics"
-        year: 2024
-        url: "/papers/paper/chaperone-regulation-of-biomolecular-condensates"
-        title: "Chaperone regulation of biomolecular condensates"
-      - authors: "Yoo _et al._"
-        journal: "Mol. Cell"
-        year: 2022
-        url: "/papers/paper/chaperones-efficiently-disperse-condensates"
-        title: "Chaperones directly and efficiently disperse stress-triggered biomolecular condensates"
-
-  - id: temperature-sensing
-    title: "How cells sense and interpret temperature"
-    image:
-    description: |
-      Temperature affects virtually every biological process, yet **how cells actually sense temperature** remains poorly understood. We have found that biomolecular condensation can act as a molecular thermometer: phase-separation temperatures of key proteins are tuned to organism-specific thermal thresholds. While temperature and heat shock have long been considered stresses that cells must respond to or die, the natural world is filled with examples of cells and organisms interpreting temperature as a key signal, not a stress. From how immune cells sense fever, to how pathogens use temperature-sensing to identify when they have encountered a warm-blooded host, to how yeast cells appear tuned to sense the body temperatures of birds that disperse them, we seek to understand how cells perceive temperature and convert this primordial signal into adaptive action.
-    papers:
-      - authors: "Keyport Kik _et al._"
-        journal: "Nat. Commun."
-        year: 2024
-        url: "/papers/paper/conserved-condensation"
-        title: "An adaptive biomolecular condensation response is conserved across environmentally divergent species"
-      - authors: "Yoo _et al._"
-        journal: "JBC"
+      - authors: "Ilton _et al._"
+        journal: "Science"
+        year: 2018
+        url: "/papers/paper/cascading-power-limits"
+        title: "The principles of cascading power limits in small, fast biological and engineered systems"
+      - authors: "Longo _et al._"
+        journal: "J. Exp. Biol."
         year: 2019
-        url: "/papers/paper/cellular-sensing-by-phase-separation"
-        title: "Cellular sensing by phase separation: Using the process, not just the products"
-      - authors: "Riback, Katanski _et al._"
-        journal: "Cell"
-        year: 2017
-        url: "/papers/paper/adaptive-phase-separation"
-        title: "Stress-triggered phase separation is an adaptive, evolutionarily tuned response"
-      - authors: "Triandafillou _et al._"
-        journal: "eLife"
+        url: "/papers/paper/beyond-power-amplification"
+        title: "Beyond power amplification: latch-mediated spring actuation is an emerging framework for the study of diverse elastic systems"
+      - authors: "Ilton _et al._"
+        journal: "Soft Matter"
+        year: 2019
+        url: "/papers/paper/size-scale-elastic-energy-release"
+        title: "The effect of size-scale on the kinematics of elastic energy release"
+      - authors: "Divi _et al._"
+        journal: "J. R. Soc. Interface"
         year: 2020
-        url: "/papers/paper/intracellular-acidification-hsf1"
-        title: "Transient intracellular acidification regulates the core transcriptional heat shock response"
+        url: "/papers/paper/latch-based-control"
+        title: "Latch-based control of energy output in spring actuated systems"
+      - authors: "Acharya _et al._"
+        journal: "J. R. Soc. Interface"
+        year: 2021
+        url: "/papers/paper/finger-snap"
+        title: "The ultrafast snap of a finger is mediated by skin friction"
+      - authors: "Cook _et al._"
+        journal: "Integr. Organismal Biol."
+        year: 2022
+        url: "/papers/paper/tunable-model-lamsa"
+        title: "A Tunable, Simplified Model for Biological Latch Mediated Spring Actuated Systems"
+      - authors: "Tsai _et al._"
+        journal: "J. R. Soc. Interface"
+        year: 2024
+        url: "/papers/paper/viscoelastic-materials"
+        title: "Viscoelastic materials are most energy efficient when loaded and unloaded at equal rates"
+
+  - id: thin-films
+    title: "Polymer thin films and fluid dynamics"
+    image:
+    description: |
+      Before turning to biomechanics, our group's work examined hydrodynamic slip and flow at the nanoscale, using capillary leveling of thin polymer films to probe how polymer chains interact with a solid interface.
+    papers:
+      - authors: "Ilton _et al._"
+        journal: "Nat. Commun."
+        year: 2018
+        url: "/papers/paper/slip-inhibition"
+        title: "Adsorption-induced slip inhibition for polymer melts on ideal substrates"
 ---
-**We study how cells sense and respond to changes in their environment.** Our particular interest has been in [**cellular stress responses**](#stress-response) where cells must rapidly and decisively respond to sudden maladaptive changes. In all cellular life, certain stresses such as heat shock and oxidative stress lead to similar phenomena: large clusters of proteins and RNA form, a powerful transcriptional response is induced, and translational activity is reduced and redirected toward newly produced transcripts. Many of these transcripts encode molecular chaperones, long thought to mainly help cells clean up misfolded proteins resulting from stress. A dominant interpretation has been that of *proteotoxic stress*: stress causes protein and RNA misfolding, cells respond inducing genes that encode chaperones, and chaperones help clean up misfolding.
+Soft matter physics is the study of soft, squishy, and deformable objects. Examples of soft matter are all around us. Most parts of our body (e.g. skin, tendon, blood) and many engineered materials (e.g. plastics, rubbers, foams, gels) fall under the category of soft matter. More precisely, the field of soft matter physics encompasses systems where room temperature thermal energy is comparable to that of applied mechanical or thermal stresses. Soft matter often includes structure on mesoscopic size scales (sizes anywhere from roughly 10 nm up to about 100 &micro;m — between that of a single atom but smaller than we can easily see with the naked eye).
 
-Our work has uncovered a remarkable alternative: **adaptive condensation**. Cells sense stress using biomolecular condensation—essentially domesticated phase transitions of proteins and RNA; chaperones are key regulators of condensation; and the entire process allows cells to rapidly respond to stress, rather than being burdened with damage that must be cleaned up. We have made key discoveries regarding the roles of [**molecular chaperones as regulators of biomolecular condensation**](#chaperones), and [**how cells sense temperature**](#temperature-sensing) and other stresses.
+**The Physics of Soft Matter Lab (PoSMLab) at Harvey Mudd College is broadly interested in the physical principles that govern the behavior of soft materials.** Our recent work has focused on understanding the physical principles of [**latch-mediated spring actuated (LaMSA) systems**](#lamsa), in which springs primarily drive motion. An archer's bow and arrow provides a great example of how a LaMSA system works: first a motor (the archer's muscles) loads elastic energy into a spring-like element (the bow), which is held in place by a latch (the archer's fingers). Upon releasing the latch, the stored elastic energy is rapidly converted into kinetic energy of motion.
 
-Biomolecular condensation—the assembly of cellular components into concentrated, spatially organized bodies—has emerged as a unifying mechanism across all of these areas.
+In the next few years PoSMLab is focused primarily on two guiding questions: 1) What properties determine the maximum kinematic performance of elastic materials? 2) What principles govern the mechanics of biological LaMSA systems?
+
+Earlier work from the group examined [**polymer thin films and fluid dynamics**](#thin-films) at the nanoscale.

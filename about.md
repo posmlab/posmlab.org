@@ -19,35 +19,37 @@ This is where you'll find the most up-to-date information on who we are, what we
 # Contact
 
 ## Mailing Address
-Office: GCIS W234<br/>
-Lab: GCIS W229<br/>
-929 E. 57th Street<br/>
-Chicago, Illinois 60637
+Mark Ilton<br/>
+Associate Professor, Department of Physics<br/>
+Harvey Mudd College<br/>
+301 Platt Blvd.<br/>
+Claremont, CA 91711<br/>
+[milton@hmc.edu](mailto:milton@hmc.edu)
 
-On the [map], GCIS, Gordon Center for Integrative Science, is the L-shaped building under the marker. Our lab is at the northwest corner on the second floor.
+## Lab Location
+Galileo B101<br/>
+Harvey Mudd College<br/>
+301 Platt Blvd.<br/>
+Claremont, CA 91711
 
-[map]: https://www.google.com/maps?q=929+E+57th+St,+Chicago,+IL+60637&hl=en&sll=37.0625,-95.677068&sspn=58.946508,135.263672&vpsrc=0&z=17
+On the [map], the lab is in the Galileo building on the Harvey Mudd College campus.
 
-
-## Phone
-* Lab: (773) 834-0635
-* Office: (773) 834-2017
-* Fax: (773) 702-0439 
+[map]: https://www.google.com/maps?q=Galileo+Hall,+Harvey+Mudd+College,+301+Platt+Blvd,+Claremont,+CA+91711
 
 
 <a name="design"></a>
 
 # Design and Implementation
 
-Back in 2015 I was inspired by [Trevor Bedford]'s clean, elegant, and functional [site][1]. More than inspired--I've copied many aspects of his site, from visual design to conceptual organization to under-the-hood code, at Trevor's ([public]) invitation. Rather than branching his code, I started from a different boilerplate, and adopted/adapted bits of his code during customization.
+This site is built on the `lab` Jekyll theme originally developed by the [Drummond Lab] at the University of Chicago, which was in turn inspired by [Trevor Bedford]'s clean, elegant, and functional [site][1]. The Drummond Lab started with [Jekyll Bootstrap] and built out a `lab` theme that separates content and presentation, making it easy for other research groups (including ours) to reuse.
 
-The site started with [Jekyll Bootstrap], and was up and running in a weekend. The site is deployed using [GitHub Pages], which combines source-code control and hosting in a most pleasant way. Modify, test locally, push, and it's live.
-
-Keeping with a major Jekyll Bootstrap idea, the site separates content and presentation. Presentation information is stored in a new theme, the `lab` theme, which may be useful to other research groups setting up sites.
+The site is deployed using [GitHub Pages], which combines source-code control and hosting in a most pleasant way. Modify, test locally, push, and it's live.
 
 By using [Sass] for stylesheets, the site gets virtually all the advantages of using [Less], while exploiting native Sass support in [GitHub Pages]. The site uses [Google Fonts] as well, primarily [Open Sans].
 
-The site's source code is freely available on [GitHub]. All code is placed under the MIT license. You're welcome to borrow / repurpose code to build your own site, and if you do, I'd appreciate attribution and a link back [here](http://drummondlab.org/about.html).
+The site's source code is freely available on [GitHub]. All code is placed under the MIT license. You're welcome to borrow / repurpose code to build your own site.
+
+[Drummond Lab]: http://drummondlab.org/about.html
 
 [Trevor Bedford]: http://bedford.io/team/trevor-bedford/
 [1]: http://bedford.io
