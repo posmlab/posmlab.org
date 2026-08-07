@@ -111,6 +111,13 @@ a.off {
 	// height: 400px;
 }
 
+// Blog/news listing thumbnail images
+.offset {
+	max-width: 100%;
+	max-height: 220px;
+	object-fit: contain;
+}
+
 .member-photo {
 	width: 20vw;
 	height: 20vw;
