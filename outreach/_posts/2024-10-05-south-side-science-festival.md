@@ -5,7 +5,7 @@ author: "D. Allan Drummond"
 author_handle: "dad"
 image: /assets/images/news/default-news.png
 category: outreach
-published: true
+published: false
 tags: [outreach]
 ---
 We had a great time at the [South Side Science Festival][1]! 

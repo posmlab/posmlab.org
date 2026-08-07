@@ -5,7 +5,7 @@ author: "D. Allan Drummond"
 author_handle: "dad"
 image: /assets/images/news/default-news.png
 category: outreach
-published: true
+published: false
 tags: [outreach]
 ---
 We made a coloring page to help you learn yeast cell biology!
