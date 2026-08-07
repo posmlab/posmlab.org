@@ -8,7 +8,7 @@ navorder: 1
 sections:
   - id: lamsa
     title: "Latch-mediated spring actuation (LaMSA)"
-    image: "assets/images/papers/cascading-power-limits.png"
+    image: "assets/images/papers/cascading-power-limits.jpg"
     description: |
       Some organisms have a loading motor, spring, and latch built into their anatomy, and use this combination to perform ultra-fast movement. Mantis shrimp use elastic energy to drive their hammer-like appendages at speeds greater than 60 mph, fast enough to break open snail and crab shells. What's perhaps even more impressive is that the performance of some of these biological LaMSA systems exceeds that of current engineering capabilities for repeatable kinematic performance at small sizes. By understanding the physical principles that govern these systems, our aim is to contribute to a better understanding of the evolutionary dynamics of these organisms and to inform future engineering design.
     papers:

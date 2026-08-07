@@ -111,9 +111,14 @@ a.off {
 }
 
 .member-photo {
+	width: 20vw;
 	height: 20vw;
+	min-width: 100px;
 	min-height: 100px;
+	max-width: 225px;
 	max-height: 225px;
+	object-fit: cover;
+	object-position: center 20%;
 }
 
 .member-name {
