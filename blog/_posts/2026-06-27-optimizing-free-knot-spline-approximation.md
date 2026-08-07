@@ -6,6 +6,7 @@ author: "Helios Hong"
 author_handle: hhong
 category: blog
 published: true
+image: /assets/images/experiment-375-lambda-sweep.png
 theme: lab
 redirect_from: /blog/2026/6/27/optimizing-free-knot-spline-approximation
 tags: []
@@ -45,7 +46,7 @@ Together, these parameters define the balance between data fidelity and smoothne
 This parameter sensitivity became important because our final analysis depends on derivatives of the fitted position curve. Even if two position fits look similar, their velocity and acceleration curves can differ significantly. Since inverse dynamics is calculated from acceleration, small fitting choices can produce large differences in the final force curve.
 
 <p align="center">
-<img src="/assets/images/experiment-375-lambda-sweep.png" width="90%">
+<img src="{{ BASE_PATH }}/assets/images/experiment-375-lambda-sweep.png" width="90%">
 </p>
 
 <p align="center"><em>This plot shows the inverse dynamics force curve for Experiment 375 using several different values of the spline regularization parameter lambda, while keeping the other fitting parameters fixed. The colored curves are inverse dynamics results from camera-based position fitting, and the thick black curve is the force sensor fit. Smaller changes in lambda can noticeably change the timing, height, and smoothness of the inverse dynamics peak, showing why the choice of smoothing parameter strongly affects higher-derivative quantities like acceleration and force.</em></p>
@@ -75,7 +76,7 @@ We then treat the upper and lower bounds as error bars. The cutoff percentage, w
 In other words, instead of reporting only one inverse dynamics curve, we can report a median curve with an uncertainty band around it. This should make our final results more honest and more useful, especially when comparing experiments with different materials, load masses, or tracking quality.
 
 <p align="center">
-<img src="/assets/images/experiment-375-uncertainty-band.png" width="90%">
+<img src="{{ BASE_PATH }}/assets/images/experiment-375-uncertainty-band.png" width="90%">
 </p>
 
 <p align="center"><em>This figure shows the final uncertainty-aware inverse dynamics curve for Experiment 375 compared with the force sensor measurement. The blue curve represents the median inverse dynamics force across many BSFK spline fits, while the red dashed curves and shaded region show the top-bottom uncertainty band from acceptable parameter choices (alpha=10). Compared with choosing a single spline fit, this approach shows both the central trend and how much the inverse dynamics result can vary due to fitting choices.</em></p>
