@@ -9,7 +9,7 @@
 	<div class="col-md-3">
 		<div class="media">
 			{% if member.image %}
-			<img class="pull-left pad-right big-member-photo" src="{{ member.image }}">
+			<img class="pull-left pad-right big-member-photo" src="{{ member.image | relative_url }}">
 			{% endif %}
 		</div>
 	</div>

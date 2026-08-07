@@ -9,7 +9,7 @@ with gratitude.
 	<div class="col-md-3">
 		<div class="media">
 			{% if page.image %}
-			<img class="pull-left pad-right media-object paper-image" src="{{ page.image }}">
+			<img class="pull-left pad-right media-object paper-image" src="{{ page.image | relative_url }}">
 			{% endif %}
 		</div>
 	</div>
