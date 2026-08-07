@@ -1,11 +1,13 @@
-"""Fetch recent posts for the lab's Instagram account via the Instagram Graph API
-and write them to _data/instagram.json for the homepage feed.
+"""Fetch recent posts for the lab's Instagram account via the Instagram API
+(Instagram Login flow) and write them to _data/instagram.json for the homepage feed.
 
 Requires two GitHub Actions repo secrets:
-  IG_USER_ID       Instagram Business/Creator account ID (a numeric string)
-  IG_ACCESS_TOKEN  A long-lived Page access token with instagram_basic scope
+  IG_USER_ID       Instagram-scoped user ID (the "user_id" field from GET /me)
+  IG_ACCESS_TOKEN  A long-lived Instagram access token (see instagram-setup.md)
 
-See instagram-setup.md for how to obtain these.
+Note this hits graph.instagram.com, not graph.facebook.com — this account uses
+the newer "Instagram API with Instagram Login" flow rather than the classic
+Facebook Page-based Graph API.
 """
 
 import json
@@ -14,7 +16,7 @@ import sys
 import urllib.parse
 import urllib.request
 
-GRAPH_VERSION = "v21.0"
+GRAPH_VERSION = "v26.0"
 LIMIT = 6
 
 IG_USER_ID = os.environ.get("IG_USER_ID")
@@ -32,22 +34,28 @@ def main():
         "access_token": IG_ACCESS_TOKEN,
         "limit": LIMIT,
     })
-    url = f"https://graph.facebook.com/{GRAPH_VERSION}/{IG_USER_ID}/media?{params}"
+    url = f"https://graph.instagram.com/{GRAPH_VERSION}/{IG_USER_ID}/media?{params}"
 
     try:
         with urllib.request.urlopen(url) as resp:
             payload = json.load(resp)
     except urllib.error.HTTPError as e:
-        print(f"Instagram Graph API request failed: {e.code} {e.read().decode('utf-8', 'ignore')}", file=sys.stderr)
+        print(f"Instagram API request failed: {e.code} {e.read().decode('utf-8', 'ignore')}", file=sys.stderr)
         sys.exit(1)
 
     if "error" in payload:
-        print(f"Instagram Graph API error: {payload['error']}", file=sys.stderr)
+        print(f"Instagram API error: {payload['error']}", file=sys.stderr)
         sys.exit(1)
 
     posts = []
     for item in payload.get("data", [])[:LIMIT]:
-        image = item.get("thumbnail_url") or item.get("media_url")
+        # Videos/Reels: media_url points to the .mp4 file itself, not a
+        # displayable image, so only use it for IMAGE/CAROUSEL_ALBUM posts.
+        # For everything else, require a thumbnail_url or skip the post.
+        if item.get("media_type") in ("IMAGE", "CAROUSEL_ALBUM"):
+            image = item.get("thumbnail_url") or item.get("media_url")
+        else:
+            image = item.get("thumbnail_url")
         if not image:
             continue
         posts.append({
