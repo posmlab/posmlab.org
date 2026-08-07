@@ -25,109 +25,47 @@
 * Sass support for CSS
 * Google Fonts
 
-## What I'm Currently Blocked On
+## Directory structure
 
-Issues are tracked at GitHub [github-issues].
+Each of the major content areas is structured like a blog: an `index.html` (or `index.md`) that lists/renders the collection, plus an `_posts/` folder of dated Markdown files. For example:
 
-[github-issues]: https://github.com/drummondlab/drummondlab.github.io/issues
-
-* Many style choices need to be updated.
-* Bottom bar
-* No Projects page
-* Content
-	* Lab members
-	* Publications
-	* Protocols
-
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
-
-
-This site has useful stuff on social media links etc.
-http://erjjones.github.io/blog/How-I-built-my-blog-in-one-day/
-
-<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-<script>
-	!function(d,s,id){
-		var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-		if(!d.getElementById(id)){
-			js=d.createElement(s);
-			js.id=id;
-			js.src=p+'://platform.twitter.com/widgets.js';
-			fjs.parentNode.insertBefore(js,fjs);
-		}
-	}(document, 'script', 'twitter-wjs');
-</script>
-
-
-## Layout
-
-I'm inspired by [Trevor Bedford]'s clean, functional [site][1]. I intend to copy it---part of Trevor's intent.
-
-* Home
-	* Research
-	* Papers
-		* Queuosine modification of tRNA and codon usage
-		* The relationship between mRNA and protein levels
-		* Heat triggers reversible...
-	* Team
-	* Blog
-	* Protocols
-	* Misc
-		* About
-		* Join
-		* Contact
-
-Each of the major areas is structured like a blog. For example:
-
-	research/
-		index.html
-		_posts/
-			2015-04-18-heat-shock-aggregation.md
 	papers/
 		index.html
 		_posts/
-			2014-12-09-queuosine.md
-			2015-04-18-mrna-protein.md
+			2018-08-09-cascading-power-limits.md
+			2024-01-31-viscoelastic-materials.md
+	projects/
+		index.md
+		_posts/
+			2018-08-09-high-speed-mechanics.md
 	protocols/
 		index.html
 		_posts/
-			2015-04-18-yeast-lysis.md
 	team/
 		index.html
 		_posts/
-			2011-10-01-d-allan-drummond.md
-			2011-10-01-edward-wallace.md
+			2018-08-01-mark-ilton.md
 	news/
 		index.html
 		_posts/
-			2015-04-09-pg-paper-accepted.md
+			2018-08-10-posm-lab-logo.md
+	blog/
+		index.html
+		_posts/
+			2026-06-27-optimizing-free-knot-spline-approximation.md
 
-For team, use a tag to indicate 'current' vs 'alumni'?
+See `CLAUDE.md` for the required frontmatter fields for each content type.
 
-## To do
+Team members use an `alum: true/false` field to distinguish current lab members from alumni on the team page.
 
-* Home page
-	* Text
-	* Picture
-	* Links to About, Join, Contact
-* Styles -- Sass
-* Blog post on what is happening here, experiences getting up and running.
-* About page
-* Twitter/Disqus...
+## Issues / to-do
 
+Issues are tracked at GitHub [github-issues].
 
-## Done
-
-* Figure out how top navbar works
+[github-issues]: https://github.com/posmlab/posmlab.org/issues
 
 ## Hosting
 
-Name registration at [NameCheap]. Custom domain via [GitHub Pages].
-[NameCheap]: https://www.namecheap.com
+Custom domain (posmlab.org) via [GitHub Pages]. Currently deploying from the `gh-pages` branch to the default `posmlab.github.io/posmlab.org` URL; the custom domain will be wired up (via the `CNAME` file) once we're ready to cut over.
 
-[Trevor Bedford]: http://bedford.io/team/trevor-bedford/
-[1]: http://bedford.io
-
+[GitHub Pages]: https://pages.github.com/
