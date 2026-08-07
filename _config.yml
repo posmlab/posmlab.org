@@ -13,7 +13,7 @@ repository: posmlab/posmlab.org
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : posmlab
+title : PoSM Lab
 tagline: Physics of Soft Matter Lab
 institution:
   url: http://www.hmc.edu

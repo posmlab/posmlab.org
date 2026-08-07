@@ -5,6 +5,7 @@ $font-size-base: 16px;
 $font-stack:    Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $primary-color: #000000;
 $subtle-color: #95a5a6;
+$brand-color: #243B65;
 $font-weight-base: 300;
 $heavy-font-weight: 700;
 
@@ -175,17 +176,28 @@ strong {
 
 // navbar
 
-.navbar-brand { 
-	font-size: 30px; 
+.navbar-brand {
+	font-size: 30px;
+	font-weight: $heavy-font-weight;
+}
+
+.navbar-nav {
+	font-size: 30px;
 	font-weight: $font-weight-base;
 }
 
-.navbar-nav { 
-	font-size: 30px; 
-	font-weight: $font-weight-base;
-	a {
-		color: black;
-	}
+// Bootstrap's .navbar-default rules are more specific than a bare
+// .navbar-brand / .navbar-nav a, so match that specificity to win.
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	color: $brand-color;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: $brand-color;
 }
 
 .dropdown-menu {
