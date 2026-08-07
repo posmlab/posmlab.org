@@ -70,3 +70,5 @@ News and blog posts link to papers via `/papers/paper/nickname` and to team memb
 - The `handle` field on team members is used for cross-referencing (e.g., `author_handle` in news posts)
 - Permalink format is `/:categories/:title` (no date in URLs)
 - Site contact/PI: Mark Ilton (milton@hmc.edu), Department of Physics, Harvey Mudd College. Lab location: Galileo B101.
+- `getinvolved.md` is the recruiting form; it posts to FormSubmit.co, which emails submissions directly — no backend in this repo.
+- The homepage's Instagram feed (`_includes/themes/lab/instagram-feed.html`, rendered from `_data/instagram.json`) is populated by a scheduled GitHub Action (`.github/workflows/instagram-feed.yml`); see `instagram-setup.md` for the one-time Meta API setup this depends on.

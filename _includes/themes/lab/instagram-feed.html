@@ -1,0 +1,20 @@
+{% if site.data.instagram and site.data.instagram.size > 0 %}
+<div class="hugespacer"></div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="head">
+      <a class="off" href="https://www.instagram.com/posm_lab/" target="_blank" rel="noopener">
+        <i class="fa fa-instagram fa-fw"></i> @posm_lab
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="instagram-grid">
+      {% for post in site.data.instagram limit:6 %}
+      <a class="instagram-item" href="{{ post.permalink }}" target="_blank" rel="noopener" title="{{ post.caption | strip_html }}">
+        <img src="{{ post.image }}" alt="{{ post.caption | strip_html | truncate: 80 }}">
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
