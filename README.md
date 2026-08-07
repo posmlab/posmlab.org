@@ -28,7 +28,7 @@ The template files are weird-looking HTML files residing in the `_includes/theme
 
 ## How to add content
 
-For most common actions---adding a lab member, paper, protocol, project, or news item---you'll be making a new Markdown file in the proper location, naming it properly, and filling in the required fields. In almost all cases, you can (and should!) copy an existing item, change the name, and change its content, rather than trying to write a Markdown document from scratch.
+For most common actions---adding a lab member, paper, project, or news item---you'll be making a new Markdown file in the proper location, naming it properly, and filling in the required fields. In almost all cases, you can (and should!) copy an existing item, change the name, and change its content, rather than trying to write a Markdown document from scratch.
 
 For example, suppose you want to add a news item, which will appear on the front page, announcing that a new paper has been published. Go into the `news/_posts` folder. Copy one of the existing items into a new file named with today's date (it matters!) and a brief title:
 
@@ -58,7 +58,7 @@ And, when you're happy with it, commit and push:
 	git commit -m "announcing new paper"
 	git push
 
-The same basic process is used to add papers, projects, team members, protocols, and blog posts — see `CLAUDE.md` for the frontmatter fields each content type expects.
+The same basic process is used to add papers, projects, team members, and blog posts — see `CLAUDE.md` for the frontmatter fields each content type expects.
 
 ## Updating the public site
 

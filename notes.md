@@ -13,7 +13,7 @@
 		* Themes separate
 * Nice to have
 	* Mobile-friendly
-	* Tags for papers, protocols
+	* Tags for papers
 	* Share
 	* Search
 	* Analytics
@@ -38,9 +38,6 @@ Each of the major content areas is structured like a blog: an `index.html` (or `
 		index.md
 		_posts/
 			2018-08-09-high-speed-mechanics.md
-	protocols/
-		index.html
-		_posts/
 	team/
 		index.html
 		_posts/

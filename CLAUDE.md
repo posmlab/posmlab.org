@@ -19,7 +19,6 @@ rake build              # Build site without serving (runs `bundle exec jekyll b
 ```bash
 rake post title="Title" [date="YYYY-MM-DD"] [tags=[tag1,tag2]]       # New blog post in blog/_posts/
 rake paper title="Title" [date="YYYY-MM-DD"] [tags=[tag1,tag2]]      # New paper in papers/_posts/
-rake protocol title="Title" [date="YYYY-MM-DD"] [tags=[tag1,tag2]]   # New protocol in protocols/_posts/
 ```
 
 Team members, news items, and projects are created manually by copying an existing file and editing.
@@ -42,8 +41,6 @@ All content lives in `{category}/_posts/` directories with filenames `YYYY-MM-DD
 **News** (`news/_posts/`): layout: news, title, author, author_handle (links to team member), image, category: news
 
 **Blog posts** (`blog/_posts/`): layout: post, title, author, author_handle, category: blog
-
-**Protocols** (`protocols/_posts/`): layout: protocol, title, description, category: protocol
 
 **Projects** (`projects/_posts/`): layout: project, title, tagline, handle, image, category: project
 
