@@ -68,7 +68,11 @@ def main():
 
     os.makedirs("_data", exist_ok=True)
     with open("_data/instagram.json", "w", encoding="utf-8") as f:
-        json.dump(posts, f, indent=2)
+        # ensure_ascii=False: GitHub Pages' Jekyll build parses _data/*.json
+        # through a YAML parser, which chokes on JSON's \uXXXX\uXXXX
+        # surrogate-pair escapes (used for emoji/astral-plane characters).
+        # Writing the actual UTF-8 characters instead avoids that entirely.
+        json.dump(posts, f, indent=2, ensure_ascii=False)
         f.write("\n")
 
     print(f"Wrote {len(posts)} posts to _data/instagram.json")
