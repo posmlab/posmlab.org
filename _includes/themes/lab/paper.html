@@ -61,27 +61,27 @@ with gratitude.
 				{% if page.pdf %}
 					<i class="fa fa-file-pdf-o fa-fw"></i>
 					{% if page.preprint %}
-					<a class="off" href="{{ page.pdf }}">Preprint PDF</a>
+					<a class="off" href="{{ BASE_PATH }}{{ page.pdf }}">Preprint PDF</a>
 					{% else %}
-					<a class="off" href="{{ page.pdf }}">PDF</a>
+					<a class="off" href="{{ BASE_PATH }}{{ page.pdf }}">PDF</a>
 					{% endif %}
 					<br/>
 				{% endif %}
 				{% if page.pdflink %}
 					<i class="fa fa-file-pdf-o fa-fw"></i>
 					{% if page.preprint %}
-					<a class="off" href="{{ page.pdflink }}">External preprint PDF</a>
+					<a class="off" href="{{ BASE_PATH }}{{ page.pdflink }}">External preprint PDF</a>
 					{% else %}
-					<a class="off" href="{{ page.pdflink }}">Journal PDF</a>
+					<a class="off" href="{{ BASE_PATH }}{{ page.pdflink }}">Journal PDF</a>
 					{% endif %}
 					<br/>
 				{% endif %}
 				{% if page.fulltext %}
 					<i class="fa fa-external-link fa-fw"></i>
 					{% if page.preprint %}
-					<a class="off" href="{{ page.fulltext }}">Preprint HTML</a>
+					<a class="off" href="{{ BASE_PATH }}{{ page.fulltext }}">Preprint HTML</a>
 					{% else %}
-					<a class="off" href="{{ page.fulltext }}">Journal HTML</a>
+					<a class="off" href="{{ BASE_PATH }}{{ page.fulltext }}">Journal HTML</a>
 					{% endif %}
 				{% endif %}
 			</div>
@@ -95,7 +95,7 @@ with gratitude.
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
 				<i class="fa fa-paperclip fa-fw"></i>
-				<a class="off" href="{{ page.supplement }}">{{ page.supplement | split: '/' | last }}</a>
+				<a class="off" href="{{ BASE_PATH }}{{ page.supplement }}">{{ page.supplement | split: '/' | last }}</a>
 			</div>
 			<div class="bigspacer"></div>			
 			{% endif %}

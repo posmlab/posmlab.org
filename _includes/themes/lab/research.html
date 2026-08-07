@@ -34,7 +34,7 @@
       <b>Key papers:</b>
       <ul>
         {% for paper in section.papers %}
-        <li>{{ paper.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}, <span class="journal">{{ paper.journal }}</span> {{ paper.year }} &mdash; <a href="{{ paper.url }}">{{ paper.title }}</a></li>
+        <li>{{ paper.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}, <span class="journal">{{ paper.journal }}</span> {{ paper.year }} &mdash; <a href="{{ BASE_PATH }}{{ paper.url }}">{{ paper.title }}</a></li>
         {% endfor %}
       </ul>
     </div>
