@@ -56,5 +56,3 @@ PoSM Lab is looking for new members! Tell us a bit more about you! Please fill o
 </form>
 
 <div class="bigspacer"></div>
-
-<p class="subtle smallnote">Submissions are emailed directly to the lab. The first submission after this form goes live will trigger a one-time confirmation email that needs to be activated before messages start arriving.</p>
