@@ -9,15 +9,15 @@ volume: 59
 issue: 6
 pages: "1609-1618"
 authors: "Sutton GP, Mendoza E, Azizi E, Longo SJ, Olberding JP, Ilton M, Patek SN"
-image:
+image: /assets/images/papers/large-animals-latch-springs.png
 redirect_from:
 fulltext: https://academic.oup.com/icb/article/59/6/1609/5545545
 pdflink:
-pdf:
+pdf: "/assets/pdfs/large-animals-latch-springs.pdf"
 github:
 pmid: 31399734
 pmcid:
-doi: "10.1093/icb/icz149"
+doi: "10.1093/icb/icz145"
 category: paper
 published: true
 preprint: false
@@ -26,6 +26,6 @@ tags: [biomechanics, modeling, LaMSA, scaling]
 ---
 {% include JB/setup %}
 
-# Abstract
+# Synopsis
 
-As animals decrease in size, the force–velocity properties of muscle limit the height that can be achieved by direct muscle-powered jumps, which is why many small animals instead use spring-actuated systems to jump. However, muscle length–tension properties limit spring-actuated systems to producing at most about one-third of the work a muscle could deliver directly. Combining these two constraints predicts a size-dependent crossover: below a threshold body size, spring actuation lets animals jump higher than direct muscle actuation would allow, while above that threshold, larger animals jump higher using muscle alone, since the maximum jump height achievable by direct actuation asymptotically approaches roughly three times that of spring-actuated jumps. We test this framework against jumping data compiled from 140 animal species and find that, consistent with the model's predictions, larger jumping animals achieve heights that exceed those of comparably sized spring-actuated jumpers.
+As animals get smaller, their ability to generate usable work from muscle contraction is decreased by the muscle's force–velocity properties, thereby reducing their effective jump height. Very small animals use a spring-actuated system, which prevents velocity effects from reducing available energy. Since force–velocity properties reduce the usable work in even larger animals, why don't larger animals use spring-actuated jumping systems as well? We will show that muscle length–tension properties limit spring-actuated systems to generating a maximum one-third of the possible work that a muscle could produce—greatly restricting the jumping height of spring-actuated jumpers. Thus a spring-actuated jumping animal has a jumping height that is one-third of the maximum possible jump height achievable were 100% of the possible muscle work available. Larger animals, which could theoretically use all of the available muscle energy, have a maximum jumping height that asymptotically approaches a value that is about three times higher than that of spring-actuated jumpers. Furthermore, a size related "crossover point" is evident for these two jumping mechanisms: animals smaller than this point can jump higher with a spring-actuated mechanism, while animals larger than this point can jump higher with a muscle-actuated mechanism. We demonstrate how this limit on energy storage is a consequence of the interaction between length–tension properties of muscles and spring stiffness. We indicate where this crossover point occurs based on modeling and then use jumping data from the literature to validate that larger jumping animals generate greater jump heights with muscle-actuated systems than spring-actuated systems.

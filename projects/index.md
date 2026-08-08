@@ -27,6 +27,11 @@ sections:
         year: 2019
         url: "/papers/paper/size-scale-elastic-energy-release"
         title: "The effect of size-scale on the kinematics of elastic energy release"
+      - authors: "Sutton _et al._"
+        journal: "Integr. Comp. Biol."
+        year: 2019
+        url: "/papers/paper/large-animals-latch-springs"
+        title: "Why do large animals never actuate their jumps with latch-mediated springs? Because they can jump higher without them"
       - authors: "Divi _et al._"
         journal: "J. R. Soc. Interface"
         year: 2020
@@ -47,6 +52,16 @@ sections:
         year: 2024
         url: "/papers/paper/viscoelastic-materials"
         title: "Viscoelastic materials are most energy efficient when loaded and unloaded at equal rates"
+      - authors: "Anderson _et al._"
+        journal: "bioRxiv (preprint)"
+        year: 2024
+        url: "/papers/paper/strumigenys-lamsa"
+        title: "Tuning a mechanical model to biological reality: A case study in the LaMSA system of the trap-jaw ant Strumigenys"
+      - authors: "Zheng _et al._"
+        journal: "Soft Matter"
+        year: 2026
+        url: "/papers/paper/elastodynamic-mechanical-analyzer"
+        title: "Elastodynamic mechanical analyzer for high strain-rate mechanical characterization"
 
   - id: thin-films
     title: "Polymer thin films and fluid dynamics"

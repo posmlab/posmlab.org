@@ -13,7 +13,7 @@ image: /assets/images/papers/cascading-power-limits.jpg
 redirect_from: /blog/2018/8/9/the-principles-of-cascading-power-limits-in-small-fast-biological-and-engineered-systems
 fulltext: https://www.science.org/doi/10.1126/science.aao1082
 pdflink:
-pdf:
+pdf: "/assets/pdfs/cascading-power-limits.pdf"
 github:
 pmid: 29700237
 pmcid:
