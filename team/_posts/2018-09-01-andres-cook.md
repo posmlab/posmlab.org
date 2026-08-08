@@ -17,4 +17,4 @@ Andrés investigated how organisms use elastic materials to store and release en
 
 Andrés was first author on the lab's [tunable, simplified model][1] for biological latch-mediated spring actuated systems.
 
-[1]: /papers/paper/tunable-model-lamsa
+[1]: {{ site.baseurl }}/papers/paper/tunable-model-lamsa

@@ -9,4 +9,4 @@ tags: [paper]
 ---
 Our [paper] showing that viscoelastic materials are most energy efficient when loaded and unloaded at equal rates is published in the Journal of the Royal Society Interface!
 
-[paper]: /papers/paper/viscoelastic-materials
+[paper]: {{ site.baseurl }}/papers/paper/viscoelastic-materials

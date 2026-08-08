@@ -9,4 +9,4 @@ tags: [paper]
 ---
 Our [paper] on latch-based control of energy output in spring actuated systems is published in the Journal of the Royal Society Interface!
 
-[paper]: /papers/paper/latch-based-control
+[paper]: {{ site.baseurl }}/papers/paper/latch-based-control

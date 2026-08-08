@@ -9,4 +9,4 @@ tags: [paper]
 ---
 Our [paper] on the effect of size-scale on the kinematics of elastic energy release from a resilin-like elastomer is published in Soft Matter!
 
-[paper]: /papers/paper/size-scale-elastic-energy-release
+[paper]: {{ site.baseurl }}/papers/paper/size-scale-elastic-energy-release

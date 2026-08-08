@@ -6,6 +6,7 @@ $font-stack:    Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $primary-color: #000000;
 $subtle-color: #95a5a6;
 $brand-color: #243B65;
+$hmc-gold: #FDB913;
 $font-weight-base: 300;
 $heavy-font-weight: 700;
 
@@ -205,6 +206,16 @@ strong {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
 	color: $brand-color;
+}
+
+// Bottom-left nav (Harvey Mudd College / HMC Physics) gets HMC gold
+// instead — scoped to navbar-left so About/Contact (navbar-right,
+// same navbar-small class) aren't affected. Needs to out-specificity
+// both Bootstrap's default and the rule above.
+.navbar-default .navbar-nav.navbar-left.navbar-small > li > a,
+.navbar-default .navbar-nav.navbar-left.navbar-small > li > a:hover,
+.navbar-default .navbar-nav.navbar-left.navbar-small > li > a:focus {
+	color: $hmc-gold;
 }
 
 .dropdown-menu {

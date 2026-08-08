@@ -3,7 +3,7 @@ layout: page
 title: "Get Involved"
 description: "Join PoSM Lab"
 group: navigation
-navorder: 5
+navorder: 6
 tags: []
 ---
 {% include JB/setup %}

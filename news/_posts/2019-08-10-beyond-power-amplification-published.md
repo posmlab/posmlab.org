@@ -9,4 +9,4 @@ tags: [paper]
 ---
 Our [paper] proposing latch-mediated spring actuation (LaMSA) as an emerging framework for the study of diverse elastic systems is published in the Journal of Experimental Biology!
 
-[paper]: /papers/paper/beyond-power-amplification
+[paper]: {{ site.baseurl }}/papers/paper/beyond-power-amplification

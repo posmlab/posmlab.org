@@ -9,4 +9,4 @@ tags: [paper]
 ---
 Our [paper] presenting a tunable, simplified model for biological latch-mediated spring actuated systems is published in Integrative Organismal Biology!
 
-[paper]: /papers/paper/tunable-model-lamsa
+[paper]: {{ site.baseurl }}/papers/paper/tunable-model-lamsa
