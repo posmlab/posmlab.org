@@ -13,7 +13,7 @@ image: /assets/images/papers/finger-snap.png
 redirect_from: /blog/2022/5/22/ultrafast-figer-snap
 fulltext: https://royalsocietypublishing.org/doi/10.1098/rsif.2021.0672
 pdflink:
-pdf:
+pdf: "/assets/pdfs/finger-snap.pdf"
 github:
 pmid: 34784775
 pmcid: PMC8596009

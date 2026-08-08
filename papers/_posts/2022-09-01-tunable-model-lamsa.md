@@ -13,7 +13,7 @@ image: /assets/images/papers/tunable-model-lamsa.png
 redirect_from: /blog/2022/9/01/template-model
 fulltext: https://academic.oup.com/iob/article/4/1/obac032/6652213
 pdflink:
-pdf:
+pdf: "/assets/pdfs/tunable-model-lamsa.pdf"
 github:
 pmid: 36060863
 pmcid: PMC9434652

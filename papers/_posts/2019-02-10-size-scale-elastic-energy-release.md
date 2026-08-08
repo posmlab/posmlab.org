@@ -13,7 +13,7 @@ image: /assets/images/papers/size-scale-elastic-energy-release.png
 redirect_from: /blog/2019/2/9/size-scaling-limits-of-impulsive-elastic-energy-release-from-a-resilin-like-elastomer
 fulltext: https://pubs.rsc.org/en/content/articlelanding/2019/sm/c9sm00870e
 pdflink:
-pdf:
+pdf: "/assets/pdfs/size-scale-elastic-energy-release.pdf"
 github:
 pmid: 31724691
 pmcid:

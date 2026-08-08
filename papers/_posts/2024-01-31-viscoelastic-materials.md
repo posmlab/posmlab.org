@@ -13,7 +13,7 @@ image: /assets/images/papers/viscoelastic-materials.png
 redirect_from: /blog/2024/1/30/viscoelastic-materials
 fulltext: https://royalsocietypublishing.org/doi/10.1098/rsif.2023.0527
 pdflink:
-pdf:
+pdf: "/assets/pdfs/viscoelastic-materials.pdf"
 github:
 pmid: 38290561
 pmcid: PMC10827427

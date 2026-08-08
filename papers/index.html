@@ -18,7 +18,7 @@ navorder: 3
     <div class="col-md-4 paperbox">
       {% if paper.embargo %}
       <div class="media">
-          <img width=100 class="media-object pull-right" src="{{ paper.image | relative_url }}"/>
+          {% if paper.image %}<img width=100 class="media-object pull-right" src="{{ paper.image | relative_url }}"/>{% endif %}
           <div class="media-body">
             <div class="smallhead media-heading">
             {{ paper.title }}
@@ -29,7 +29,7 @@ navorder: 3
       {% elsif paper.preprint %}
       <div class="media">
         <a class="pull-right" href="{{ paper.url | relative_url }}">
-          <img width=100 class="media-object" src="{{ paper.image | relative_url }}">
+          {% if paper.image %}<img width=100 class="media-object" src="{{ paper.image | relative_url }}">{% endif %}
         </a>
         <div class="media-body">
             <div class="smallhead media-heading">
@@ -41,7 +41,7 @@ navorder: 3
       {% else %}
       <div class="media">
         <a class="pull-right" href="{{ paper.url | relative_url }}">
-          <img width=100 class="media-object" src="{{ paper.image | relative_url }}">
+          {% if paper.image %}<img width=100 class="media-object" src="{{ paper.image | relative_url }}">{% endif %}
         </a>
         <div class="media-body">
             <div class="smallhead media-heading">

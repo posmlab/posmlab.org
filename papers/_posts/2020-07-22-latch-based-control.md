@@ -13,7 +13,7 @@ image: /assets/images/papers/latch-based-control.png
 redirect_from: /blog/2020/7/22/latch-based-control
 fulltext: https://royalsocietypublishing.org/doi/10.1098/rsif.2020.0070
 pdflink:
-pdf:
+pdf: "/assets/pdfs/latch-based-control.pdf"
 github:
 pmid: 32693743
 pmcid: PMC7423419

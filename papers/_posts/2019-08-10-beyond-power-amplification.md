@@ -13,7 +13,7 @@ image: /assets/images/papers/beyond-power-amplification.png
 redirect_from: /blog/2019/8/9/beyond-power-amplification
 fulltext: https://journals.biologists.com/jeb/article/222/15/jeb197889/223378
 pdflink:
-pdf:
+pdf: "/assets/pdfs/beyond-power-amplification.pdf"
 github:
 pmid: 31399509
 pmcid:
