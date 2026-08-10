@@ -7,18 +7,83 @@ fetches the latest posts once a day, writes them to `_data/instagram.json`, and
 commits that file. The homepage just renders whatever's in that file
 (`_includes/themes/lab/instagram-feed.html`).
 
-Until the two secrets below are set, `_data/instagram.json` stays `[]` and the feed
-section simply doesn't render (no broken images, it just doesn't show up).
+If `_data/instagram.json` is `[]` (e.g. secrets missing or a token issue), the feed
+section simply doesn't render — no broken images, it just doesn't show up.
 
 This uses the **Instagram API with Instagram Login** flow (`graph.instagram.com`),
-not the classic Facebook Page-based Graph API. Note: **Graph API Explorer's "Get
-Page Access Token" does not produce a token compatible with this flow**, even
-though it can be used to read media directly — the actual short-lived token has to
-come from Instagram's own OAuth authorization page. This tripped us up during
-initial setup, so the steps below are the verified-working path, not the first
-thing we tried.
+not the classic Facebook Page-based Graph API.
 
-## One-time setup (in Meta's tools — requires your own login/account)
+## How it works
+
+Three repo secrets (Settings → Secrets and variables → Actions) power this:
+
+- **`IG_USER_ID`** — the Instagram-scoped user ID for @posm_lab. Doesn't change;
+  no maintenance needed.
+- **`IG_ACCESS_TOKEN`** — a long-lived Instagram access token, valid ~60 days at a
+  time. Used daily by `instagram-feed.yml` to fetch posts.
+- **`SECRETS_PAT`** — a fine-grained GitHub personal access token, scoped to only
+  this repo and only "Secrets: Read and write." Used by
+  `.github/workflows/refresh-instagram-token.yml`, which runs on the 1st and 16th
+  of every month, calls Instagram's refresh endpoint, and writes the renewed
+  token back into `IG_ACCESS_TOKEN` — so `IG_ACCESS_TOKEN` never actually expires
+  under normal operation, and no one needs to touch it by hand.
+
+`SECRETS_PAT` itself has an expiration date (set when it was created, since GitHub
+requires one on fine-grained PATs). GitHub will email the token's owner before it
+expires. When that happens, generate a replacement:
+
+1. GitHub → your profile photo → Settings → Developer settings → Personal access
+   tokens → Fine-grained tokens → Generate new token.
+2. **Resource owner**: the `posmlab` organization. **Repository access**: only
+   this repo. **Permissions**: Repository permissions → **Secrets** →
+   **Read and write** (this must be read-and-write, not read-only — a read-only
+   token will authenticate fine but fail with a 403 the moment the workflow
+   tries to write the refreshed token). Leave everything else at "No access."
+3. Copy the new token value and update the `SECRETS_PAT` repo secret with it.
+4. Trigger the workflow once manually (Actions tab → "Refresh Instagram access
+   token" → Run workflow) to confirm it still succeeds.
+
+## If the feed stops updating
+
+Check the Actions tab for failures in either workflow.
+
+- **`instagram-feed.yml` failing, `refresh-instagram-token.yml` succeeding**:
+  likely unrelated to the token (e.g. Instagram API changes) — check the run's
+  logs.
+- **`refresh-instagram-token.yml` failing**: usually `SECRETS_PAT` — expired,
+  wrong permission, or org access policy changed (org Settings → Third-party
+  Access → Personal access tokens has both a policy toggle and a per-token
+  approval queue; check both). Fix per the steps above, then re-run.
+- **Both failing, or `IG_ACCESS_TOKEN` has actually expired** (the refresh
+  workflow can't refresh a token that's already dead — it can only extend one
+  that's still valid): fall back to a manual refresh, or if that also fails,
+  get a completely new token from scratch. Both are covered below.
+
+### Manual refresh
+
+Only works if you already have the *current* long-lived token's value saved
+somewhere outside GitHub — repo secrets are write-only and can't be viewed once
+saved, by anyone, so there's no way to pull it back out of `IG_ACCESS_TOKEN` to
+feed into this:
+
+```powershell
+$refreshParams = @{
+  grant_type   = "ig_refresh_token"
+  access_token = "YOUR_CURRENT_LONG_LIVED_TOKEN"
+}
+$refreshed = Invoke-RestMethod -Uri "https://graph.instagram.com/refresh_access_token" -Body $refreshParams -Method Get
+$refreshed.access_token | Set-Clipboard
+```
+
+(Token must be at least 24 hours old and not yet expired; refreshing resets the
+60-day clock.) Paste the refreshed token from your clipboard into the
+`IG_ACCESS_TOKEN` repo secret.
+
+### Getting a brand-new token from scratch
+
+Needed if the token has fully expired and you don't have a saved copy to refresh,
+or if the whole chain needs rebuilding (e.g. the Meta app gets deleted). Requires
+your own login to whoever manages @posm_lab's Meta account.
 
 1. **Confirm @posm_lab is an Instagram Business or Creator account** (Instagram
    Settings → Account type). Already done — it's set to Creator.
@@ -74,7 +139,7 @@ thing we tried.
    ```
 
    The `expires_in` value (~60 days, in seconds) confirms success. The full token
-   is now on your clipboard — this is your `IG_ACCESS_TOKEN`.
+   is now on your clipboard — this is your new `IG_ACCESS_TOKEN`.
 
 6. **Find your Instagram-scoped user ID**, if you don't already have it:
    ```
@@ -84,66 +149,10 @@ thing we tried.
    works fine there even though token generation doesn't). Use the `user_id`
    value, not `id`. This is your `IG_USER_ID`.
 
-7. **Add both as repo secrets**: this repo on GitHub → Settings → Secrets and
-   variables → Actions → New repository secret. Add `IG_USER_ID` and
-   `IG_ACCESS_TOKEN` (paste the clipboard contents from step 5 directly, don't
-   retype it).
+7. **Update the repo secrets**: Settings → Secrets and variables → Actions.
+   Paste the new `IG_ACCESS_TOKEN` (and `IG_USER_ID`, if it changed) directly
+   from the clipboard — don't retype it.
 
-8. **Trigger the workflow once manually** to confirm it works: Actions tab →
-   "Update Instagram feed" → Run workflow. Check that `_data/instagram.json` gets
-   populated and committed.
-
-## Ongoing maintenance
-
-The long-lived access token expires roughly every 60 days. A scheduled workflow
-(`.github/workflows/refresh-instagram-token.yml`) refreshes it automatically on
-the 1st and 16th of each month, well within that window. **This requires a
-one-time setup step** (below) — until that's done, or if the refresh workflow
-itself starts failing, fall back to the manual refresh described further down.
-
-### One-time setup for automatic refresh
-
-The refresh workflow needs to *write* a repo secret (`IG_ACCESS_TOKEN`), which
-the default `GITHUB_TOKEN` every workflow gets is deliberately not allowed to
-do — that's a GitHub security boundary. So it needs a separate, standing
-credential with that specific permission:
-
-1. Create a **fine-grained personal access token**: GitHub → your profile photo
-   → Settings → Developer settings → Personal access tokens → Fine-grained
-   tokens → Generate new token.
-2. **Resource owner**: the `posmlab` organization. **Repository access**: "Only
-   select repositories" → this repo only. **Permissions**: Repository
-   permissions → "Secrets" → Read and write (leave everything else at "No
-   access"). Set an expiration (e.g. 1 year) — you'll need to repeat this setup
-   when it expires.
-3. Generate the token and copy it immediately (GitHub shows it once).
-4. Add it as a repo secret named `SECRETS_PAT` (Settings → Secrets and
-   variables → Actions → New repository secret) — same place `IG_ACCESS_TOKEN`
-   lives, but this one is more powerful: it can only touch this repo's
-   secrets, but it can touch *all* of them, not just the Instagram one. Don't
-   reuse or widen its scope.
-5. Trigger the workflow once manually (Actions tab → "Refresh Instagram access
-   token" → Run workflow) to confirm it succeeds end to end.
-
-### Manual refresh (fallback)
-
-If the current token has already expired, or the automatic workflow is
-failing and you need the feed working again immediately, refresh it by hand.
-Unlike getting the *first* token, refreshing an existing long-lived one is
-simple and doesn't require repeating the OAuth dance — just:
-
-```powershell
-$refreshParams = @{
-  grant_type   = "ig_refresh_token"
-  access_token = "YOUR_CURRENT_LONG_LIVED_TOKEN"
-}
-$refreshed = Invoke-RestMethod -Uri "https://graph.instagram.com/refresh_access_token" -Body $refreshParams -Method Get
-$refreshed.access_token | Set-Clipboard
-```
-
-(Token must be at least 24 hours old and not yet expired; refreshing resets the
-60-day clock.) Paste the refreshed token from your clipboard into the
-`IG_ACCESS_TOKEN` repo secret — but note you need to already have the current
-token's value saved somewhere outside GitHub to run this (repo secrets are
-write-only and can't be viewed once saved, by anyone). If you don't have it
-saved anywhere, skip straight to redoing steps 4–5 above for a fresh token.
+8. **Trigger `instagram-feed.yml` once manually** to confirm it works: Actions
+   tab → "Update Instagram feed" → Run workflow. Check that
+   `_data/instagram.json` gets populated and committed.
