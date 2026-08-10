@@ -88,18 +88,21 @@
             by <a class="off" href="{{ BASE_PATH }}{{ author.url }}">{{ author.nickname }}</a>
             {% endif %}           
           </div>
-          <div class="spacer"></div>  
-          <div class="spacer"></div>        
+          <div class="spacer"></div>
+          <div class="spacer"></div>
         {% endfor %}
+        <div class="smallnote">
+          <a class="off" href="{{ BASE_PATH }}/news/">See all news &rarr;</a>
+        </div>
       </div>
-      <div class="bigspacer"></div>   
+      <div class="bigspacer"></div>
     </div>
 
     <!-- Column to display blog posts -->
     <div class="col-md-4">
       <div class="row">
         <div class="head">
-          <a class="off" href="{{ BASE_PATH }}/blog/">Posts</a>
+          <a class="off" href="{{ BASE_PATH }}/blog/">Blog</a>
         </div>
         <div class="bigspacer"></div>
         <div class="feedbox pad-left">
