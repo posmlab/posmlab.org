@@ -9,7 +9,7 @@ volume:
 issue:
 pages:
 authors: "Acker A"
-image:
+image: /assets/images/papers/tendon-viscoelastic-behavior.png
 redirect_from:
 fulltext:
 pdflink: https://drive.google.com/file/d/1A_CPrIUVUdDAAFyDZVTH4bNFZOsNu-ZB/view?usp=drive_link

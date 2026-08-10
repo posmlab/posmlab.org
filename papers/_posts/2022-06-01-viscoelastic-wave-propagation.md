@@ -9,7 +9,7 @@ volume:
 issue:
 pages:
 authors: "Chen A"
-image:
+image: /assets/images/papers/viscoelastic-wave-propagation.png
 redirect_from:
 fulltext:
 pdflink: https://drive.google.com/file/d/1orQ2IKl5P6bCRvKAI0Apj4jWtbcMnNjm/view?usp=drive_link
