@@ -1,0 +1,24 @@
+{% comment %}<!--
+Web Share API button. Uses the visitor's own device/OS share sheet
+(works well on mobile: Instagram DM/story, Messages, email, etc.)
+instead of hardcoding specific platforms. Hidden by default and only
+shown if the browser actually supports navigator.share, since desktop
+support is inconsistent.
+-->{% endcomment %}
+<i class="fa fa-share-alt fa-fw web-share-icon" style="display:none;"></i>
+<a class="off web-share-link" href="#" style="display:none;">Share</a>
+<script>
+(function () {
+  if (!navigator.share) { return; }
+  var icons = document.querySelectorAll('.web-share-icon');
+  var links = document.querySelectorAll('.web-share-link');
+  for (var i = 0; i < icons.length; i++) { icons[i].style.display = 'inline'; }
+  for (var i = 0; i < links.length; i++) {
+    links[i].style.display = 'inline';
+    links[i].addEventListener('click', function (e) {
+      e.preventDefault();
+      navigator.share({ title: document.title, url: window.location.href }).catch(function () {});
+    });
+  }
+})();
+</script>
