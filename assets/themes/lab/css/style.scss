@@ -124,14 +124,21 @@ a.off {
 	height: 20vw;
 	min-width: 100px;
 	min-height: 100px;
-	max-width: 225px;
-	max-height: 225px;
+	max-width: 150px;
+	max-height: 150px;
 	object-fit: cover;
 	object-position: center 20%;
 }
 
 .member-name {
 	font-size: ceil($font-size-base*1.2);
+	overflow-wrap: break-word;
+	word-break: break-word;
+}
+
+.memberbox .media-body {
+	overflow-wrap: break-word;
+	word-break: break-word;
 }
 
 @media all and (max-width: 800) {
