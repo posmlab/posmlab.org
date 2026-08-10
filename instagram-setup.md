@@ -95,10 +95,42 @@ thing we tried.
 
 ## Ongoing maintenance
 
-The long-lived access token expires roughly every 60 days. When it does, the
-workflow will start failing (check the Actions tab). Unlike getting the *first*
-token, refreshing an existing long-lived one is simple and doesn't require
-repeating the OAuth dance — just:
+The long-lived access token expires roughly every 60 days. A scheduled workflow
+(`.github/workflows/refresh-instagram-token.yml`) refreshes it automatically on
+the 1st and 16th of each month, well within that window. **This requires a
+one-time setup step** (below) — until that's done, or if the refresh workflow
+itself starts failing, fall back to the manual refresh described further down.
+
+### One-time setup for automatic refresh
+
+The refresh workflow needs to *write* a repo secret (`IG_ACCESS_TOKEN`), which
+the default `GITHUB_TOKEN` every workflow gets is deliberately not allowed to
+do — that's a GitHub security boundary. So it needs a separate, standing
+credential with that specific permission:
+
+1. Create a **fine-grained personal access token**: GitHub → your profile photo
+   → Settings → Developer settings → Personal access tokens → Fine-grained
+   tokens → Generate new token.
+2. **Resource owner**: the `posmlab` organization. **Repository access**: "Only
+   select repositories" → this repo only. **Permissions**: Repository
+   permissions → "Secrets" → Read and write (leave everything else at "No
+   access"). Set an expiration (e.g. 1 year) — you'll need to repeat this setup
+   when it expires.
+3. Generate the token and copy it immediately (GitHub shows it once).
+4. Add it as a repo secret named `SECRETS_PAT` (Settings → Secrets and
+   variables → Actions → New repository secret) — same place `IG_ACCESS_TOKEN`
+   lives, but this one is more powerful: it can only touch this repo's
+   secrets, but it can touch *all* of them, not just the Instagram one. Don't
+   reuse or widen its scope.
+5. Trigger the workflow once manually (Actions tab → "Refresh Instagram access
+   token" → Run workflow) to confirm it succeeds end to end.
+
+### Manual refresh (fallback)
+
+If the current token has already expired, or the automatic workflow is
+failing and you need the feed working again immediately, refresh it by hand.
+Unlike getting the *first* token, refreshing an existing long-lived one is
+simple and doesn't require repeating the OAuth dance — just:
 
 ```powershell
 $refreshParams = @{
@@ -111,8 +143,7 @@ $refreshed.access_token | Set-Clipboard
 
 (Token must be at least 24 hours old and not yet expired; refreshing resets the
 60-day clock.) Paste the refreshed token from your clipboard into the
-`IG_ACCESS_TOKEN` repo secret. There's no automatic renewal wired up (that would
-mean storing a second, more powerful token with permission to rewrite repo
-secrets), so this is a manual ~2-minute task every couple of months. This refresh
-step hasn't been exercised live yet — if it errors, the fallback is just to redo
-steps 4–5 above for a fresh token.
+`IG_ACCESS_TOKEN` repo secret — but note you need to already have the current
+token's value saved somewhere outside GitHub to run this (repo secrets are
+write-only and can't be viewed once saved, by anyone). If you don't have it
+saved anywhere, skip straight to redoing steps 4–5 above for a fresh token.
