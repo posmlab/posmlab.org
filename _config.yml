@@ -129,33 +129,11 @@ JB :
   #    baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
   #    idsite : '1'                   # the id of the site on Piwik
 
-  # Settings for sharing 
-  # Sharing is for things like tweet, plusone, hn upvotes, like, linkedin
-  # Add a tweet button    => provider : tweet
-  # Add a like button     => provider : like (you also need a facebook appid)
-  # Add a HN button     => provider : hn
-  # Add them all (i.e. hn + tweet + like) => provider : all
-  # Set 'provider' to the sharing provider you want to use.
-  # Set 'provider' to false to turn sharing off globally.
-  #
-  sharing :
-   provider : false
-   bluesky :
-     size :
-   twitter :
-     size :
-     via :
-     count :
-   facebook :
-     appid : 123
-     layout : button_count
-     font :
-     faces : false
-     width : 90
-   linkedin :
-     counter : right      
-    
-  # Settings for all other include helpers can be defined by creating 
+  # Sharing on paper/post pages uses the Web Share API (see
+  # _includes/JB/web-share.html) instead of the old per-platform
+  # provider system, so there's no sharing config needed here.
+
+  # Settings for all other include helpers can be defined by creating
   # a hash with key named for the given helper. ex:
   #
   #   pages_list :
