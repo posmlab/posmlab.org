@@ -8,7 +8,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-PoSM Lab is looking for new members! If you are a Harvey Mudd College student, please apply [posmlab projects on the uro.hmc.edu site](https://uro.hmc.edu/projects?search=posmlab).
+PoSM Lab is looking for new members! If you are a Harvey Mudd College student, please apply to the [posmlab projects on the uro.hmc.edu site](https://uro.hmc.edu/projects?search=posmlab).
 
 
 If you are unable to appy on the uro.hmc.edu site, then please tell us a bit more about you! Fill out the form below if you are interested and would like to know more. Feel free to also contact us with any questions about any of our projects.
