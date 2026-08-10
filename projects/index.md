@@ -8,7 +8,7 @@ navorder: 1
 sections:
   - id: materials
     title: "Materials Team"
-    image: "/assets/images/papers/ELLA_assembly.png"
+    image: "/assets/images/projects/ELLA_assembly.png"
     description: |
       Understanding how materials perform when slowly loaded and quickly unloaded is key to assessing their potential as a spring in LaMSA systems. We are building an experimental materials characterization approach that combines a custom-built recoil setup with dynamic mechanical analysis. 
     papers:
