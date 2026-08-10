@@ -8,7 +8,7 @@ email:
 twitter:
 github:
 scholar:
-image:
+image: /assets/images/team/amelia-acker.jpg
 alum: true
 ---
 {% include JB/setup %}
