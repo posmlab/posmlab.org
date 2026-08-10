@@ -11,14 +11,13 @@ tags: []
 PoSM Lab is looking for new members!
 
 <div class="callout-box">
-  <div class="head">Harvey Mudd College students, apply here</div>
-  <p>PoSM Lab posts its open projects on HMC's college-wide research portal — that's the fastest and best way to be considered.</p>
+  <b>>Harvey Mudd College students, apply here!</b> PoSM Lab posts its open projects on HMC's college-wide research portal — that's the fastest and best way to be considered.</p>
   <a class="btn btn-brand" href="https://uro.hmc.edu/projects?search=posmlab" target="_blank" rel="noopener">Apply on uro.hmc.edu &raquo;</a>
 </div>
 
 <div class="bigspacer"></div>
 
-**Not an HMC student, or unable to apply on uro.hmc.edu?** Tell us a bit more about you! Fill out the form below if you are interested and would like to know more. Feel free to also contact us with any questions about any of our projects.
+**Not an HMC student, or currently unable to apply on uro.hmc.edu?** Tell us a bit more about you! Fill out the form below if you are interested and would like to know more. Feel free to also contact us with any questions about any of our projects.
 
 <div class="bigspacer"></div>
 
