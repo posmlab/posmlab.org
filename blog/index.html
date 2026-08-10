@@ -25,8 +25,12 @@ navorder: 4
 				{{ post.date | date_to_string }}
 				{% if author %}
 				by <a class="off" href="{{ author.url | relative_url }}">{{ author.nickname }}</a>
-				{% endif %}				
-			</div>	
+				{% endif %}
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				{% include JB/web-share.html title=post.title url=post.url %}
+			</div>
 		</div>
 		<div class="col-md-8">		
 			<div style="height:5px;"></div>			

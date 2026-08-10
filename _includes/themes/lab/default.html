@@ -138,5 +138,25 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Web Share API wiring for any .web-share-link buttons on the page (see JB/web-share.html) -->
+    <script>
+    (function () {
+      if (!navigator.share) { return; }
+      var icons = document.querySelectorAll('.web-share-icon');
+      for (var i = 0; i < icons.length; i++) { icons[i].style.display = 'inline'; }
+      var links = document.querySelectorAll('.web-share-link');
+      for (var i = 0; i < links.length; i++) {
+        links[i].style.display = 'inline';
+        links[i].addEventListener('click', function (e) {
+          e.preventDefault();
+          var el = e.currentTarget;
+          var title = el.getAttribute('data-share-title') || document.title;
+          var url = el.getAttribute('data-share-url') || window.location.href;
+          navigator.share({ title: title, url: url }).catch(function () {});
+        });
+      }
+    })();
+    </script>
   </body>
 </html>

@@ -1,24 +1,22 @@
 {% comment %}<!--
 Web Share API button. Uses the visitor's own device/OS share sheet
 (works well on mobile: Instagram DM/story, Messages, email, etc.)
-instead of hardcoding specific platforms. Hidden by default and only
-shown if the browser actually supports navigator.share, since desktop
-support is inconsistent.
+instead of hardcoding specific platforms.
+
+Params (both optional): title, url
+  Needed on listing pages that render multiple items inline (e.g.
+  blog/index.html looping over posts), so each item's button shares
+  that item's own URL/title rather than whatever page it's on. Omit
+  both to default to the current page (e.g. on a single post's own
+  page) via document.title / window.location.href.
+
+The actual navigator.share() wiring is a single site-wide script in
+default.html, not here — that way N buttons on one page share one
+listener setup instead of each include re-attaching its own.
 -->{% endcomment %}
 <i class="fa fa-share-alt fa-fw web-share-icon" style="display:none;"></i>
-<a class="off web-share-link" href="#" style="display:none;">Share</a>
-<script>
-(function () {
-  if (!navigator.share) { return; }
-  var icons = document.querySelectorAll('.web-share-icon');
-  var links = document.querySelectorAll('.web-share-link');
-  for (var i = 0; i < icons.length; i++) { icons[i].style.display = 'inline'; }
-  for (var i = 0; i < links.length; i++) {
-    links[i].style.display = 'inline';
-    links[i].addEventListener('click', function (e) {
-      e.preventDefault();
-      navigator.share({ title: document.title, url: window.location.href }).catch(function () {});
-    });
-  }
-})();
-</script>
+<a class="off web-share-link"
+   href="#"
+   style="display:none;"
+   {% if include.title %}data-share-title="{{ include.title | escape }}"{% endif %}
+   {% if include.url %}data-share-url="{{ include.url | absolute_url }}"{% endif %}>Share</a>
