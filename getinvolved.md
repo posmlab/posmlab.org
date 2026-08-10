@@ -8,7 +8,10 @@ tags: []
 ---
 {% include JB/setup %}
 
-PoSM Lab is looking for new members! Tell us a bit more about you! Please fill out the form below if you are interested and would like to know more. Feel free to also contact us with any questions about any of our projects.
+PoSM Lab is looking for new members! If you are a Harvey Mudd College student, please apply [posmlab projects on the uro.hmc.edu site](https://uro.hmc.edu/projects?search=posmlab).
+
+
+If you are unable to appy on the uro.hmc.edu site, then please tell us a bit more about you! Fill out the form below if you are interested and would like to know more. Feel free to also contact us with any questions about any of our projects.
 
 <div class="bigspacer"></div>
 
