@@ -38,6 +38,18 @@ navorder: 3
             <p class="note">{{ paper.shortref }}</p>
         </div>
       </div>
+      {% elsif paper.thesis %}
+      <div class="media">
+        <a class="pull-right" href="{{ paper.url | relative_url }}">
+          {% if paper.image %}<img width=100 class="media-object" src="{{ paper.image | relative_url }}">{% endif %}
+        </a>
+        <div class="media-body">
+            <div class="smallhead media-heading">
+            <a href="{{ paper.url | relative_url }}" class="off">Senior Thesis: {{ paper.title }}</a>
+            </div>
+            <p class="note">{{ paper.shortref }}</p>
+        </div>
+      </div>
       {% else %}
       <div class="media">
         <a class="pull-right" href="{{ paper.url | relative_url }}">

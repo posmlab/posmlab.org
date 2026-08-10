@@ -114,6 +114,11 @@
             <a class="off" href="{{ BASE_PATH }}{{ paper.url }}">
             {{ paper.title }}
             </a>
+            {% elsif paper.thesis %}
+            Senior Thesis:
+            <a class="off" href="{{ BASE_PATH }}{{ paper.url }}">
+            {{ paper.title }}
+            </a>
             {% else %}
             <a class="off" href="{{ BASE_PATH }}{{ paper.url }}">
             {{ paper.title }}
@@ -128,6 +133,8 @@
           <div class="smallnote">
             {% if paper.preprint %}
             Posted
+            {% elsif paper.thesis %}
+            Completed
             {% else %}
             Published
             {% endif %}

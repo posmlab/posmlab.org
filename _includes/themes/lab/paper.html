@@ -22,6 +22,11 @@ with gratitude.
 				PREPRINT (not yet peer-reviewed)
 				</div>
 				{% endif %}
+				{% if page.thesis %}
+				<div class="smallhead">
+				UNDERGRADUATE SENIOR THESIS
+				</div>
+				{% endif %}
 				{{ page.title }}
 				
 			</div>
@@ -71,6 +76,8 @@ with gratitude.
 					<i class="fa fa-file-pdf-o fa-fw"></i>
 					{% if page.preprint %}
 					<a class="off" href="{{ page.pdflink }}">External preprint PDF</a>
+					{% elsif page.thesis %}
+					<a class="off" href="{{ page.pdflink }}">Thesis PDF (HMC login required)</a>
 					{% else %}
 					<a class="off" href="{{ page.pdflink }}">Journal PDF</a>
 					{% endif %}
