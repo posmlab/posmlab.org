@@ -3,7 +3,7 @@ layout: research
 title: "Techniques"
 description: "Experimental and computational techniques used in PoSM Lab"
 group: navigation
-navorder: 5
+navorder: 4
 
 sections:
   - id: ema
