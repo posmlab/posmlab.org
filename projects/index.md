@@ -10,7 +10,7 @@ sections:
     title: "Materials Team"
     image: "/assets/images/projects/ELLA_assembly.png"
     description: |
-      Understanding how materials perform when slowly loaded and quickly unloaded is key to assessing their potential as a spring in LaMSA systems. We are building an experimental materials characterization approach that combines a custom-built recoil setup with dynamic mechanical analysis. 
+      Understanding how materials perform when slowly loaded and rapidly unloaded is key to assessing their potential as a spring in LaMSA systems. We combine two instruments — our custom-built [Elastodynamic Mechanical Analyzer (EMA)](/techniques.html#ema) and a TA Instruments RSA-G2 Dynamic Mechanical Analyzer — to characterize materials from quasi-static to millisecond, LaMSA-relevant timescales. Read more on our [techniques page](/techniques.html). We're extending this approach beyond synthetic elastomers to biological tissues like tendon, working to connect bulk material performance back to the underlying molecular and structural architecture that produces it.
     papers:
       - authors: "Ilton _et al._"
         journal: "Soft Matter"
@@ -27,12 +27,17 @@ sections:
         year: 2026
         url: "/papers/paper/elastodynamic-mechanical-analyzer"
         title: "Elastodynamic mechanical analyzer for high strain-rate mechanical characterization"
+      - authors: "Acker"
+        journal: "HMC Senior Thesis"
+        year: 2026
+        url: "/papers/paper/tendon-viscoelastic-behavior"
+        title: "Characterizing the Viscoelastic Behavior of the Bullfrog Plantaris Tendon"
 
   - id: biomechanical-modeling
     title: "Biomechanical Modeling Team"
     image: "/assets/images/papers/cascading-power-limits.jpg"
     description: |
-      Some organisms have a loading motor, spring, and latch built into their anatomy, and use this combination to perform ultra-fast movement. Mantis shrimp use elastic energy to drive their hammer-like appendages at speeds greater than 60 mph, fast enough to break open snail and crab shells. What's perhaps even more impressive is that the performance of some of these biological LaMSA systems exceeds that of current engineering capabilities for repeatable kinematic performance at small sizes. By understanding the physical principles that govern these systems, our aim is to contribute to a better understanding of the evolutionary dynamics of these organisms and to inform future engineering design. In our group we take a simplified modeling approach to understand how LaMSA systems perform across size-scale and morphological differences. 
+      Some organisms have a loading motor, spring, and latch built into their anatomy, and use this combination to perform ultra-fast movement. Mantis shrimp use elastic energy to drive their hammer-like appendages at speeds greater than 60 mph, fast enough to break open snail and crab shells. What's perhaps even more impressive is that the performance of some of these biological LaMSA systems exceeds that of current engineering capabilities for repeatable kinematic performance at small sizes. By understanding the physical principles that govern these systems, our aim is to contribute to a better understanding of the evolutionary dynamics of these organisms and to inform future engineering design. We develop and apply a general, tunable [LaMSA Template Model](/techniques.html#modeling) to understand how these systems perform across size-scale and morphological differences, and we're extending this framework to explore how multiple LaMSA systems shape each other's mechanical performance when they interact directly, such as in predator-prey encounters.
     papers:
       - authors: "Ilton _et al._"
         journal: "Science"
@@ -64,10 +69,6 @@ sections:
       
     
 ---
-Soft matter physics is the study of soft, squishy, and deformable objects. Examples of soft matter are all around us. Most parts of our body (e.g. skin, tendon, blood) and many engineered materials (e.g. plastics, rubbers, foams, gels) fall under the category of soft matter. More precisely, the field of soft matter physics encompasses systems where room temperature thermal energy is comparable to that of applied mechanical or thermal stresses. Soft matter often includes structure on mesoscopic size scales (sizes anywhere from roughly 10 nm up to about 100 &micro;m — between that of a single atom but smaller than we can easily see with the naked eye).
+**The Physics of Soft Matter Lab (PoSM Lab) at Harvey Mudd College studies latch-mediated spring actuated (LaMSA) systems** — mechanisms that use a motor to slowly load a spring, which is held in place by a latch, then rapidly release that stored elastic energy into motion. An archer's bow and arrow is a simple example: the archer's muscles (motor) slowly load elastic energy into the bow (spring) while it's held by the archer's fingers (latch); releasing the latch converts that stored energy into the arrow's motion almost instantly. The same basic mechanism drives some of the fastest movements in biology, from mantis shrimp strikes to trap-jaw ant mandibles, and is increasingly used in engineered systems designed for fast, repeatable actuation.
 
-**The Physics of Soft Matter Lab (PoSMLab) at Harvey Mudd College is broadly interested in the physical principles that govern the behavior of soft materials.** Our current work focuses on understanding the physical principles of [**latch-mediated spring actuated (LaMSA) systems**](#lamsa), in which springs primarily drive motion. An archer's bow and arrow provides a great example of how a LaMSA system works: first a motor (the archer's muscles) loads elastic energy into a spring-like element (the bow), which is held in place by a latch (the archer's fingers). Upon releasing the latch, the stored elastic energy is rapidly converted into kinetic energy of motion.
-
-In the next few years PoSMLab is focused primarily on two guiding questions: 1) What properties determine the maximum kinematic performance of elastic materials? 2) What principles govern the mechanics of biological LaMSA systems?
-
-Our lab is currently divided into two subteams: Materials and Biomechanical Modeling
+Our lab is organized into two subteams that approach LaMSA systems from complementary directions: a **Materials Team** that characterizes how elastic materials store and release energy at the high strain rates relevant to LaMSA systems, and a **Biomechanical Modeling Team** that builds and applies mathematical models to understand how LaMSA systems perform across different organisms, size-scales, and morphologies.
