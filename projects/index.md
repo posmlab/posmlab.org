@@ -11,6 +11,8 @@ sections:
     image: "/assets/images/projects/ema-rsa-g2-composite.png"
     description: |
       Understanding how materials perform when slowly loaded and rapidly unloaded is key to assessing their potential as a spring in LaMSA systems. We combine two instruments, our custom-built [Elastodynamic Mechanical Analyzer (EMA)](#ema) and a [TA Instruments RSA-G2 Dynamic Mechanical Analyzer](#rsa-g2), to characterize materials from quasi-static to millisecond, LaMSA-relevant timescales. We're extending this approach beyond synthetic elastomers to biological tissues like tendon, working to connect bulk material performance back to the underlying molecular and structural architecture that produces it.
+
+      We're always happy to collaborate with other groups on material characterization. If you have a material you think would be interesting to test at high strain rates, [reach out](/about.html#contact) and let's talk.
     papers:
       - authors: "Ilton _et al._"
         journal: "Soft Matter"
