@@ -8,7 +8,7 @@ email:
 twitter:
 github:
 scholar:
-image:  /assets/images/team/cleo-mchenry.jpg
+image:  /assets/images/team/cleo-mchenry.jpeg
 alum: false
 ---
 {% include JB/setup %}
