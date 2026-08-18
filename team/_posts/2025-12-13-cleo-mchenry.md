@@ -1,14 +1,14 @@
 ---
 layout: member
 title: "Cleo McHenry"
-position: "Undergraduate researcher"
+position: "Undergraduate researcher (Eng & Art '29)"
 handle: cmchenry
 nickname: Cleo
 email:
 twitter:
 github:
 scholar:
-image:
+image:  /assets/images/team/cleo-mchenry.jpg
 alum: false
 ---
 {% include JB/setup %}
@@ -56,4 +56,4 @@ alum: false
   needs to change.
 -->
 
-Cleo is an undergraduate researcher in PoSM Lab.
+Cleo is a sophomore at Harvey Mudd College planning on majoring in Engineering and doubling with Fine Arts at Scripps College. She is contributing to the computational modeling of high speed recoil dynamics for quasi-linear viscoelastic materials. In addition, she is updating the electrical, mechanical, and computational aspects of the lab's recoil machine ELLA. Cleo joined POSM lab out of interest in the biological applications of materials research and has since discovered its alignment with her textile artwork. Outside the lab she spends her time working at Pomona's Benton Museum, tinkering in the Maker space, or going on hikes. She looks forward to continuing to explore modeling and materials work!
