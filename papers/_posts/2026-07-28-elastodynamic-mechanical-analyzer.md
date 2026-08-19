@@ -5,9 +5,9 @@ year: "2026"
 shortref: "Zheng <i>et al.</i> 2026"
 nickname: "elastodynamic-mechanical-analyzer"
 journal: "Soft Matter"
-volume:
-issue:
-pages:
+volume: "22"
+issue: 
+pages: "5368 - 5376"
 authors: "Zheng Y, Taghon MM, Freeburn GR, Birnbaum S, Van Den Berg J, Ilton M, Wood RJ, Patek SN, Crosby AJ"
 image: /assets/images/papers/elastodynamic-mechanical-analyzer.png
 redirect_from:
