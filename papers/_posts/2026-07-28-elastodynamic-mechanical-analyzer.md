@@ -12,7 +12,7 @@ authors: "Zheng Y, Taghon MM, Freeburn GR, Birnbaum S, Van Den Berg J, Ilton M, 
 image: /assets/images/papers/elastodynamic-mechanical-analyzer.png
 redirect_from:
 fulltext: https://pubs.rsc.org/en/content/articlelanding/2026/sm/d6sm00072j
-pdflink:
+pdflink: https://drive.google.com/file/d/1PGi9_OQSecqW-VyzS8h7fUE0_BAbPvwN/view?usp=sharing
 pdf:
 github:
 pmid:
