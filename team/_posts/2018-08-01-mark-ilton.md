@@ -14,9 +14,9 @@ alum: false
 office_hours:
  week_of: "August 31st"
  sessions:
-   - day: "Friday, September 4"
-      time: "10:00–11:00 a.m."
-      location: "Keck 1237"
+  - day: "Friday, September 4"
+   time: "10:00–11:00 a.m."
+   location: "Keck 1237"
 ---
 {% include JB/setup %}
 
