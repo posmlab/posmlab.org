@@ -63,4 +63,4 @@ office_hours:
   needs to change.
 -->
 
-After joining the Department of Physics at HMC in 2018, Prof. Ilton is seeking curious and enthusiastic students interested in Soft Matter and Biomechanics to join the PoSM Lab. When not in the classroom or lab, you will likely find him in the yoga studio, biking around town, or relaxing in the back yard.
+Prof. Ilton is seeking curious and enthusiastic students interested in Soft Matter and Biomechanics to join the PoSM Lab. When not in the classroom or lab, you will likely find him in the yoga studio, biking around town, or relaxing in the back yard.
