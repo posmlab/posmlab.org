@@ -11,12 +11,12 @@ scholar: bhT7jrwAAAAJ
 image: /assets/images/team/mark-ilton.jpg
 alum: false
 # OFFICE HOURS: To post hours, uncomment this block and update every value.
-# office_hours:
-#  week_of: "August 31st"
-#  sessions:
-#    - day: "Friday, September 4"
-#      time: "10:00–11:00 a.m."
-#      location: "Keck 1237"
+office_hours:
+ week_of: "August 31st"
+ sessions:
+  - day: "Friday, September 4"
+    time: "10:00–11:00 a.m."
+    location: "Keck 1237"
 ---
 {% include JB/setup %}
 
@@ -63,4 +63,4 @@ alum: false
   needs to change.
 -->
 
-After joining the Department of Physics at HMC in 2018, Prof. Ilton is seeking curious and enthusiastic students interested in Soft Matter and Biomechanics to join the PoSM Lab. When not in the classroom or lab, you will likely find him in the yoga studio, biking around town, or relaxing in the back yard.
+Prof. Ilton is seeking curious and enthusiastic students interested in Soft Matter and Biomechanics to join the PoSM Lab. When not in the classroom or lab, you will likely find him in the yoga studio, biking around town, or relaxing in the back yard.
