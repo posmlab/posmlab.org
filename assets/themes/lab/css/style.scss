@@ -137,6 +137,10 @@ a.off {
 	word-break: break-word;
 }
 
+.member-profile-name {
+	font-weight: 600;
+}
+
 .memberbox .media-body {
 	overflow-wrap: break-word;
 	word-break: break-word;
@@ -189,6 +193,7 @@ a.off {
 
 // shared office-hours schedule on member profiles and getinvolved.md
 .office-hours-heading {
+	font-weight: 600;
 	margin-top: 24px;
 }
 

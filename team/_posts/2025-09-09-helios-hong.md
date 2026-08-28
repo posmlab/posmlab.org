@@ -24,11 +24,6 @@ office_hours:
     - day: "Thursday, September 3"
       time: "7:30–9:00 p.m."
       location: "Galileo B101"
-  week_of: "September 7th"
-  sessions:
-    - day: "Monday, September 7"
-      time: "1:00–2:30 p.m."
-      location: "Galileo B101"
 ---
 {% include JB/setup %}
 
