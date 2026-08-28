@@ -59,6 +59,17 @@
 		</div>
 		<div class="bigspacer"></div>
 		{% endif %}
+		{% if member.linkedin %}
+		<div class="smallhead">
+			LinkedIn
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa-brands fa-linkedin fa-fw"></i>
+			<a class="off" href="https://www.linkedin.com/in/{{ member.linkedin }}">{{ member.title }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
 		{% if member.scholar %}
 		<div class="smallhead">
 			Google Scholar
@@ -78,7 +89,7 @@
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
 			<i class="fa fa-envelope fa-fw"></i>
-			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
+			<a class="off" href="mailto:{{ member.email }}">{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}</a>
 		</div>
 		<div class="bigspacer"></div>
 		{% endif %}

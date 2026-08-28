@@ -4,9 +4,10 @@ title: "Helios Hong"
 position: "Undergraduate researcher (CS-Physics '29)"
 handle: hhong
 nickname: Helios
-email:
+email: helhong@g.hmc.edu
 twitter:
-github:
+github: heli-belii
+linkedin: helios-hong-8314b52a1
 scholar:
 image: /assets/images/team/helios-hong.jpg
 alum: false
