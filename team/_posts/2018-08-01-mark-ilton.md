@@ -10,6 +10,13 @@ github: milton-hmc
 scholar: bhT7jrwAAAAJ
 image: /assets/images/team/mark-ilton.jpg
 alum: false
+# OFFICE HOURS: To post hours, uncomment this block and update every value.
+# office_hours:
+#   week_of: "August 31st"
+#   sessions:
+#     - day: "Monday, August 31"
+#       time: "1:00–2:30 p.m."
+#       location: "Galileo B101"
 ---
 {% include JB/setup %}
 
@@ -57,29 +64,3 @@ alum: false
 -->
 
 After joining the Department of Physics at HMC in 2018, Prof. Ilton is seeking curious and enthusiastic students interested in Soft Matter and Biomechanics to join the PoSM Lab. When not in the classroom or lab, you will likely find him in the yoga studio, biking around town, or relaxing in the back yard.
-
-## Office Hours
-
-<!--
-  OFFICE HOURS FORMAT
-  Replace the message below with the current week's schedule, keeping this
-  format:
-
-  ### Week of Month D
-
-  - **Day, Month D:** H:MM–H:MM a.m./p.m. in Room
-
-  Use one bullet per session, bold the day and date, and use an en dash (–)
-  between times. Include a.m. or p.m. and the room for every session. Delete
-  the old week's schedule before posting the new one.
-
-  Example:
-  ### Week of August 31st
-
-  - **Monday, September 7:** 1:00–2:30 p.m. in Galileo B101
-
-  Keep the visitor note below the schedule when updating your hours.
--->
-Office hours have not been posted for this week.
-
-Want to visit PoSM Lab during office hours? Please email us ahead of time to let us know you'd like to stop by. If none of these times work for you, check another team member's page for office hours that better fit your schedule.

@@ -10,6 +10,13 @@ github:
 scholar:
 image:  /assets/images/team/cleo-mchenry.jpeg
 alum: false
+# OFFICE HOURS: To post hours, uncomment this block and update every value.
+# office_hours:
+#   week_of: "August 31st"
+#   sessions:
+#     - day: "Monday, August 31"
+#       time: "1:00–2:30 p.m."
+#       location: "Galileo B101"
 ---
 {% include JB/setup %}
 
@@ -49,23 +56,6 @@ alum: false
       meant to be fun, not just a CV entry
   Aim for 1-3 short paragraphs. Either first or third person is
   fine -- look at other team members' pages for examples of tone.
-
-  ADDING OFFICE HOURS
-  Add this block below your bio, outside this comment. Replace the example
-  dates, times, and room, and delete the previous week's schedule:
-
-  ## Office Hours
-
-  Keep the weekly heading and one bullet per session. Bold the day and date,
-  use an en dash (–) between times, and include a.m. or p.m. and the room.
-  ### Week of August 31st
-
-  - **Monday, September 7:** 1:00–2:30 p.m. in Galileo B101
-
-  Keep this note below the schedule:
-  Want to visit PoSM Lab during office hours? Please email us ahead of time to
-  let us know you'd like to stop by. If none of these times work for you,
-  check another team member's page for office hours that better fit your schedule.
 
   When you're happy with your changes, scroll down on the GitHub
   page and commit them (or open a pull request, if you don't

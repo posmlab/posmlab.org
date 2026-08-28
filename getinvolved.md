@@ -17,6 +17,45 @@ PoSM Lab is looking for new members!
 
 <div class="bigspacer"></div>
 
+{% assign current_team = site.categories.team | where: "alum", "false" %}
+{% assign office_hours_count = 0 %}
+{% for member in current_team %}
+  {% if member.office_hours %}
+    {% assign office_hours_count = office_hours_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+{% if office_hours_count > 0 %}
+<section class="office-hours-overview" aria-labelledby="office-hours-heading">
+  <div class="head" id="office-hours-heading">Visit PoSM Lab during office hours</div>
+  <p>Current team members' posted hours for the upcoming week are listed below. Please email the team member ahead of time to let them know you'd like to stop by.</p>
+
+  <div class="row office-hours-grid">
+    {% for member in current_team %}
+      {% if member.office_hours %}
+      <div class="col-sm-6 office-hours-column">
+        <div class="office-hours-card">
+          <div class="smallhead"><a class="off" href="{{ member.url | relative_url }}">{{ member.title }}</a></div>
+          {% include themes/lab/office-hours-schedule.html member=member %}
+          <div class="office-hours-actions">
+            <a href="{{ member.url | relative_url }}">View profile</a>
+            {% if member.email %}
+            <span aria-hidden="true">&middot;</span>
+            <a href="mailto:{{ member.email }}">Email {{ member.nickname }}</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <p class="subtle">If none of these times work for you, check back next week or contact another team member.</p>
+</section>
+
+<div class="bigspacer"></div>
+{% endif %}
+
 **Not an HMC student, or currently unable to apply on uro.hmc.edu?** Tell us a bit more about you! Fill out the form below if you are interested and would like to know more. Feel free to also contact us with any questions about any of our projects.
 
 <div class="bigspacer"></div>

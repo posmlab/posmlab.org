@@ -36,7 +36,7 @@ All content lives in `{category}/_posts/` directories with filenames `YYYY-MM-DD
 
 **Papers** (`papers/_posts/`): layout, title, year, shortref, nickname, journal, volume, issue, pages, authors, image, pdf, pdflink, fulltext, github, doi, pmid, pmcid, altmetric_id, preprint, embargo, published, category: paper
 
-**Team members** (`team/_posts/`): layout: member, title (full name), position, handle, nickname, email, twitter, github, linkedin, scholar, image, alum (true/false)
+**Team members** (`team/_posts/`): layout: member, title (full name), position, handle, nickname, email, twitter, github, linkedin, scholar, image, alum (true/false), office_hours (`week_of` plus a `sessions` list containing `day`, `time`, and `location`)
 
 **News** (`news/_posts/`): layout: news, title, author, author_handle (links to team member), image, category: news
 

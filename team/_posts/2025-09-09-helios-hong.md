@@ -11,6 +11,19 @@ linkedin: helios-hong-8314b52a1
 scholar:
 image: /assets/images/team/helios-hong.jpg
 alum: false
+# OFFICE HOURS: Update the week and replace all sessions each week.
+office_hours:
+  week_of: "August 31st"
+  sessions:
+    - day: "Monday, August 31"
+      time: "1:00–2:30 p.m."
+      location: "Galileo B101"
+    - day: "Tuesday, September 1"
+      time: "7:00–9:00 p.m."
+      location: "Galileo B101"
+    - day: "Thursday, September 3"
+      time: "7:30–9:00 p.m."
+      location: "Galileo B101"
 ---
 {% include JB/setup %}
 
@@ -58,32 +71,3 @@ alum: false
 -->
 
 Helios Hong is a freshman at Harvey Mudd College studying physics and computer science. In PoSM Lab, he works on computational and theoretical models for understanding the recoil dynamics and material properties of quasi-linear viscoelastic materials. He is broadly interested in active matter, soft materials, and how matter can retain memory of past forces, deformations, and environments. Outside the lab, Helios plays bassoon in the Claremont Concert Orchestra and Pomona College Orchestra and is involved in the Mudd Amateur Rocketry Club. He hopes to continue exploring the connections between physics, computation, biomechanics, and materials research.
-
-## Office Hours
-
-<!--
-  OFFICE HOURS FORMAT
-  Replace the schedule below each week, keeping this format:
-
-  ### Week of Month D
-
-  - **Day, Month D:** H:MM–H:MM a.m./p.m. in Room
-
-  Use one bullet per session, bold the day and date, and use an en dash (–)
-  between times. Include a.m. or p.m. and the room for every session. Delete
-  the old week's schedule before posting the new one.
-
-  Example:
-  ### Week of August 31st
-
-  - **Monday, September 7:** 1:00–2:30 p.m. in Galileo B101
-
-  Keep the visitor note below the schedule when updating your hours.
--->
-### Week of August 31st
-
-- **Monday, August 31:** 1:00–2:30 p.m. in Galileo B101
-- **Tuesday, September 1:** 7:00–9:00 p.m. in Galileo B101
-- **Thursday, September 3:** 7:30–9:00 p.m. in Galileo B101
-
-Want to visit PoSM Lab during office hours? Please email us ahead of time to let us know you'd like to stop by. If none of these times work for you, check another team member's page for office hours that better fit your schedule.

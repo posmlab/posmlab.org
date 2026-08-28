@@ -186,6 +186,63 @@ a.off {
 	}
 }
 
+// shared office-hours schedule on member profiles and getinvolved.md
+.office-hours-week {
+	font-size: ceil($font-size-base*1.2);
+	font-weight: 600;
+	margin: 12px 0 8px;
+}
+
+.office-hours-list {
+	margin-bottom: 14px;
+	padding-left: 22px;
+
+	li {
+		margin-bottom: 5px;
+	}
+}
+
+.office-hours-note {
+	margin-top: 14px;
+}
+
+.office-hours-overview {
+	border-top: 1px solid $subtle-color;
+	border-bottom: 1px solid $subtle-color;
+	padding: 24px 0 8px;
+}
+
+.office-hours-grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 18px;
+}
+
+.office-hours-column {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.office-hours-card {
+	background-color: #ffffff;
+	border: 1px solid lighten($subtle-color, 22%);
+	border-left: 4px solid $hmc-gold;
+	border-radius: 4px;
+	padding: 18px 20px;
+	width: 100%;
+}
+
+.office-hours-actions {
+	border-top: 1px solid lighten($subtle-color, 25%);
+	font-size: $font-size-base*0.9;
+	margin-top: 14px;
+	padding-top: 10px;
+
+	span {
+		margin: 0 6px;
+	}
+}
+
 // emphases
 
 term {

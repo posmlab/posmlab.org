@@ -117,6 +117,12 @@
 
 		<div class="post">
 			{{ content }}
+
+			{% if member.office_hours %}
+			<h2>Office Hours</h2>
+			{% include themes/lab/office-hours-schedule.html member=member %}
+			<p class="office-hours-note">Want to visit PoSM Lab during office hours? Please email us ahead of time to let us know you'd like to stop by. If none of these times work for you, check another team member's page for office hours that better fit your schedule.</p>
+			{% endif %}
 		</div>
 
 		{% assign lastname = member.title | split: ' ' | last %}

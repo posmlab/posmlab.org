@@ -1,0 +1,8 @@
+<div class="office-hours-week">Week of {{ include.member.office_hours.week_of }}</div>
+<ul class="office-hours-list">
+	{% for session in include.member.office_hours.sessions %}
+	<li>
+		<strong>{{ session.day }}:</strong> {{ session.time }}{% if session.location %} in {{ session.location }}{% endif %}
+	</li>
+	{% endfor %}
+</ul>
