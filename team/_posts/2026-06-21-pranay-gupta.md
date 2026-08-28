@@ -56,14 +56,16 @@ alum: false
 
   ## Office Hours
 
-  <!--
-    Keep the weekly heading and one bullet per session. Bold the day and date,
-    use an en dash (–) between times, and include a.m. or p.m. and the room.
-  -->
-  ### Week of September 7–11
+  Keep the weekly heading and one bullet per session. Bold the day and date,
+  use an en dash (–) between times, and include a.m. or p.m. and the room.
+  ### Week of August 31st
 
   - **Monday, September 7:** 1:00–2:30 p.m. in Galileo B101
 
+  Keep this note below the schedule:
+  Want to visit PoSM Lab during office hours? Please email us ahead of time to
+  let us know you'd like to stop by. If none of these times work for you,
+  check another team member's page for office hours that better fit your schedule.
 
   When you're happy with your changes, scroll down on the GitHub
   page and commit them (or open a pull request, if you don't
@@ -80,3 +82,5 @@ Pranay is an undergraduate researcher in PoSM Lab.
   the editing instructions above.
 -->
 Office hours have not been posted for this week.
+
+Want to visit PoSM Lab during office hours? Please email us ahead of time to let us know you'd like to stop by. If none of these times work for you, check another team member's page for office hours that better fit your schedule.

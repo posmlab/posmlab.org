@@ -50,21 +50,6 @@ alum: false
   Aim for 1-3 short paragraphs. Either first or third person is
   fine -- look at other team members' pages for examples of tone.
 
-  ADDING OFFICE HOURS
-  Add this block below your bio, outside this comment. Replace the example
-  dates, times, and room, and delete the previous week's schedule:
-
-  ## Office Hours
-
-  <!--
-    Keep the weekly heading and one bullet per session. Bold the day and date,
-    use an en dash (–) between times, and include a.m. or p.m. and the room.
-  -->
-  ### Week of September 7–11
-
-  - **Monday, September 7:** 1:00–2:30 p.m. in Galileo B101
-
-
   When you're happy with your changes, scroll down on the GitHub
   page and commit them (or open a pull request, if you don't
   have write access) -- that's it, nothing else on this page
@@ -72,3 +57,29 @@ alum: false
 -->
 
 After joining the Department of Physics at HMC in 2018, Prof. Ilton is seeking curious and enthusiastic students interested in Soft Matter and Biomechanics to join the PoSM Lab. When not in the classroom or lab, you will likely find him in the yoga studio, biking around town, or relaxing in the back yard.
+
+## Office Hours
+
+<!--
+  OFFICE HOURS FORMAT
+  Replace the message below with the current week's schedule, keeping this
+  format:
+
+  ### Week of Month D
+
+  - **Day, Month D:** H:MM–H:MM a.m./p.m. in Room
+
+  Use one bullet per session, bold the day and date, and use an en dash (–)
+  between times. Include a.m. or p.m. and the room for every session. Delete
+  the old week's schedule before posting the new one.
+
+  Example:
+  ### Week of August 31st
+
+  - **Monday, September 7:** 1:00–2:30 p.m. in Galileo B101
+
+  Keep the visitor note below the schedule when updating your hours.
+-->
+Office hours have not been posted for this week.
+
+Want to visit PoSM Lab during office hours? Please email us ahead of time to let us know you'd like to stop by. If none of these times work for you, check another team member's page for office hours that better fit your schedule.

@@ -65,7 +65,7 @@ Helios Hong is a freshman at Harvey Mudd College studying physics and computer s
   OFFICE HOURS FORMAT
   Replace the schedule below each week, keeping this format:
 
-  ### Week of Month D–Month D
+  ### Week of Month D
 
   - **Day, Month D:** H:MM–H:MM a.m./p.m. in Room
 
@@ -74,12 +74,16 @@ Helios Hong is a freshman at Harvey Mudd College studying physics and computer s
   the old week's schedule before posting the new one.
 
   Example:
-  ### Week of September 7–11
+  ### Week of August 31st
 
   - **Monday, September 7:** 1:00–2:30 p.m. in Galileo B101
--->
-### Week of August 31–September 4
 
-- **Monday, August 31:** 1:00–2:30 p.m. in Jacobs B101
-- **Tuesday, September 1:** 7:00–9:00 p.m. in Jacobs B101
-- **Thursday, September 3:** 7:30–9:00 p.m. in Jacobs B101
+  Keep the visitor note below the schedule when updating your hours.
+-->
+### Week of August 31st
+
+- **Monday, August 31:** 1:00–2:30 p.m. in Galileo B101
+- **Tuesday, September 1:** 7:00–9:00 p.m. in Galileo B101
+- **Thursday, September 3:** 7:30–9:00 p.m. in Galileo B101
+
+Want to visit PoSM Lab during office hours? Please email us ahead of time to let us know you'd like to stop by. If none of these times work for you, check another team member's page for office hours that better fit your schedule.
