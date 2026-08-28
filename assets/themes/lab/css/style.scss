@@ -132,6 +132,7 @@ a.off {
 
 .member-name {
 	font-size: ceil($font-size-base*1.2);
+	font-weight: 600;
 	overflow-wrap: break-word;
 	word-break: break-word;
 }
@@ -187,13 +188,18 @@ a.off {
 }
 
 // shared office-hours schedule on member profiles and getinvolved.md
+.office-hours-heading {
+	margin-top: 24px;
+}
+
 .office-hours-week {
-	font-size: ceil($font-size-base*1.2);
+	font-size: $font-size-base;
 	font-weight: 600;
 	margin: 12px 0 8px;
 }
 
 .office-hours-list {
+	font-size: $font-size-base;
 	margin-bottom: 14px;
 	padding-left: 22px;
 
@@ -230,6 +236,11 @@ a.off {
 	border-radius: 4px;
 	padding: 18px 20px;
 	width: 100%;
+}
+
+.office-hours-member-name {
+	font-size: $font-size-base;
+	font-weight: 600;
 }
 
 .office-hours-actions {

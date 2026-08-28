@@ -26,16 +26,15 @@ PoSM Lab is looking for new members!
 {% endfor %}
 
 {% if office_hours_count > 0 %}
-<section class="office-hours-overview" aria-labelledby="office-hours-heading">
-  <div class="head" id="office-hours-heading">Visit PoSM Lab during office hours</div>
-  <p>Current team members' posted hours for the upcoming week are listed below. Please email the team member ahead of time to let them know you'd like to stop by.</p>
+<section class="office-hours-overview">
+  <p><strong>Visit PoSM Lab during office hours!</strong> Current team members' posted hours for the upcoming week are listed below. Please email the team member ahead of time to let them know you'd like to stop by.</p>
 
   <div class="row office-hours-grid">
     {% for member in current_team %}
       {% if member.office_hours %}
       <div class="col-sm-6 office-hours-column">
         <div class="office-hours-card">
-          <div class="smallhead"><a class="off" href="{{ member.url | relative_url }}">{{ member.title }}</a></div>
+          <div class="office-hours-member-name"><a class="off" href="{{ member.url | relative_url }}"><strong>{{ member.title }}</strong></a></div>
           {% include themes/lab/office-hours-schedule.html member=member %}
           <div class="office-hours-actions">
             <a href="{{ member.url | relative_url }}">View profile</a>
