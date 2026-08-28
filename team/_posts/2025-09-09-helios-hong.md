@@ -61,4 +61,6 @@ Helios Hong is a freshman at Harvey Mudd College studying physics and computer s
 ## Office Hours
 
 <!-- Replace the sentence below each week with your current lab office hours. -->
-This week's office hours will be posted here.
+August 31st, 1-2:30pm, Jacobs B101
+September 1st, 7-9pm, Jacobs B101
+September 3rd, 7:30-9pm, Jacobs B101
