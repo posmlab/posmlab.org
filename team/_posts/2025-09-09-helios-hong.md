@@ -22,7 +22,7 @@ office_hours:
       time: "7:00–9:00 p.m."
       location: "Galileo B101"
     - day: "Thursday, September 3"
-      time: "7:30–9:00 p.m."
+      time: "7:00–8:00 p.m."
       location: "Galileo B101"
 ---
 {% include JB/setup %}
