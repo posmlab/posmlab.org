@@ -63,4 +63,4 @@ alum: false
   needs to change.
 -->
 
-Pranay is an undergraduate researcher in PoSM Lab.
+Pranay Gupta is a junior at Harvey Mudd College majoring in physics and biology. They are interested in how biomechanical systems generate and control movement, with both magnitude and precision exceeding the capabilities of engineered machines. In the PoSM Lab, Pranay works on modeling latch mediated spring actuation (LaMSA) mechanisms in biological organisms, like the trap-jaw of Strumigenys ants that produces one of the fastest movements in the animal kingdom. Beyond scientific research, Pranay enjoys thinking about education, the academy, and other institutions that produce and transmit knowledge. They work in the on campus writing center, tutor biology with the HMC Academic Excellence program, and lead a chapter of the Prison Education Project.
