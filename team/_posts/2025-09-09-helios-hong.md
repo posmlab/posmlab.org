@@ -1,7 +1,7 @@
 ---
 layout: member
 title: "Helios Hong"
-position: "Undergraduate researcher (CS-Physics '29)"
+position: "Undergraduate researcher (Physics '29)"
 handle: hhong
 nickname: Helios
 email: helhong@g.hmc.edu
@@ -13,10 +13,10 @@ image: /assets/images/team/helios-hong.jpg
 alum: false
 # OFFICE HOURS: Update the week and replace all sessions each week.
 office_hours:
-  week_of: "September 7th"
+  week_of: "September 14th"
   sessions:
     - day: "Monday, September 7"
-      time: "6:00–8:00 p.m."
+      time: "6:00–7:00 p.m."
       location: "Galileo B101"
 ---
 {% include JB/setup %}
