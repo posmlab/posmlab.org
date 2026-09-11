@@ -15,7 +15,7 @@ alum: false
 office_hours:
   week_of: "September 14th"
   sessions:
-    - day: "Monday, September 7"
+    - day: "Monday, September 14"
       time: "6:00–7:00 p.m."
       location: "Galileo B101"
 ---
