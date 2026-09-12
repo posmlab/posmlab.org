@@ -9,6 +9,7 @@ volume: 18
 issue: 184
 pages: "20210672"
 authors: "Acharya R, Challita EJ, Ilton M, Bhamla MS"
+author_handles: [milton]
 image: /assets/images/papers/finger-snap.png
 redirect_from: /blog/2022/5/22/ultrafast-figer-snap
 fulltext: https://royalsocietypublishing.org/doi/10.1098/rsif.2021.0672

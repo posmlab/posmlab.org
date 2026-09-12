@@ -9,6 +9,7 @@ volume:
 issue:
 pages: "2024.02.15.580213"
 authors: "Anderson PSL, Jorge JF, Crofts SB, Castro JT, Didcock RL, Cook A, Larabee FJ, Ilton M"
+author_handles: [acook, milton]
 image: /assets/images/papers/strumigenys-lamsa-zone.png
 redirect_from:
 fulltext: https://www.biorxiv.org/content/10.1101/2024.02.15.580213v1.full

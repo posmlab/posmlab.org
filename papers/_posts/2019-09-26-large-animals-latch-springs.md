@@ -9,6 +9,7 @@ volume: 59
 issue: 6
 pages: "1609-1618"
 authors: "Sutton GP, Mendoza E, Azizi E, Longo SJ, Olberding JP, Ilton M, Patek SN"
+author_handles: [milton]
 image: /assets/images/papers/large-animals-latch-springs.png
 redirect_from:
 fulltext: https://academic.oup.com/icb/article/59/6/1609/5545545

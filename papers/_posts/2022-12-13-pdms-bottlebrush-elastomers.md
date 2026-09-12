@@ -9,6 +9,7 @@ volume: 55
 issue: 23
 pages: "10312-10319"
 authors: "Clarke BR, Kim H, Ilton M, Watkins JJ, Crosby AJ, Tew GN"
+author_handles: [milton]
 image:
 redirect_from:
 fulltext: https://pubs.acs.org/doi/10.1021/acs.macromol.2c01332

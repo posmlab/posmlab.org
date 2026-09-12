@@ -126,20 +126,14 @@
 		</div>
 
 		{% comment %}
-		Papers list authors as "Lastname I" (e.g. "Ilton M"), so match on surname plus
-		first initial rather than surname alone -- otherwise every member shares the
-		papers of any unrelated author with the same last name. Members whose published
-		name differs from their profile title can set `paper_author` in their front
-		matter to override the key (e.g. paper_author: "Zhang T").
+		Papers list their lab authors explicitly in `author_handles`, matched against
+		the member's `handle`. Do not infer authorship from the `authors` string --
+		surnames and initials are ambiguous ("Wu S" is Ingrid Wu, "Kim H" is not
+		Halie Kim), and guessing wrong credits a member with a stranger's paper. A
+		new paper shows up on no member page until its handles are filled in.
 		{% endcomment %}
-		{% assign name_parts = member.title | split: ' ' %}
-		{% assign first_initial = name_parts.first | slice: 0, 1 %}
-		{% assign author_key = name_parts | last | append: ' ' | append: first_initial %}
-		{% if member.paper_author %}
-			{% assign author_key = member.paper_author %}
-		{% endif %}
 		{% for paper in site.categories.papers %}
-			{% if paper.authors contains author_key %}
+			{% if paper.author_handles contains member.handle %}
 				{% assign papersq = true %}
 			{% endif %}
 		{% endfor %}
@@ -149,7 +143,7 @@
 			<div class="head">Papers</div>
 			<div class="spacer"></div>
 			{% for paper in site.categories.papers %}
-				{% if paper.authors contains author_key %}
+				{% if paper.author_handles contains member.handle %}
 					{% if paper.embargo %}
 					<p>{{ paper.title }}
 					{% else %}

@@ -9,6 +9,7 @@ volume:
 issue:
 pages:
 authors: "Cook A"
+author_handles: [acook]
 image:
 redirect_from:
 fulltext:

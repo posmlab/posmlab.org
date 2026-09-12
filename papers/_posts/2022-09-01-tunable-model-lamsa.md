@@ -9,6 +9,7 @@ volume: 4
 issue: 1
 pages: "obac032"
 authors: "Cook A, Pandhigunta K, Acevedo MA, Walker A, Didcock RL, Castro JT, O'Neill D, Acharya R, Bhamla MS, Anderson PSL, Ilton M"
+author_handles: [acook, milton]
 image: /assets/images/papers/tunable-model-lamsa.png
 redirect_from: /blog/2022/9/01/template-model
 fulltext: https://academic.oup.com/iob/article/4/1/obac032/6652213

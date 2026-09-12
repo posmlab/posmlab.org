@@ -9,6 +9,7 @@ volume:
 issue:
 pages:
 authors: "Feiler A"
+author_handles: [afeiler]
 image:
 redirect_from:
 fulltext:

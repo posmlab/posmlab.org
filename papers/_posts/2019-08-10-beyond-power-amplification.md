@@ -9,6 +9,7 @@ volume: 222
 issue: 15
 pages: "jeb197889"
 authors: "Longo SJ, Cox SM, Azizi E, Ilton M, Olberding JP, St Pierre R, Patek SN"
+author_handles: [milton]
 image: /assets/images/papers/beyond-power-amplification.png
 redirect_from: /blog/2019/8/9/beyond-power-amplification
 fulltext: https://journals.biologists.com/jeb/article/222/15/jeb197889/223378

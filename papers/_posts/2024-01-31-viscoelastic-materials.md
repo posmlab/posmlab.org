@@ -9,6 +9,7 @@ volume: 21
 issue: 210
 pages: "20230527"
 authors: "Tsai L, Navarro P, Wu S, Levinson T, Mendoza E, Schwaner MJ, Daley MA, Azizi E, Ilton M"
+author_handles: [ltsai, pnavarro, iwu, tlevinson, milton]
 image: /assets/images/papers/viscoelastic-materials.png
 redirect_from: /blog/2024/1/30/viscoelastic-materials
 fulltext: https://royalsocietypublishing.org/doi/10.1098/rsif.2023.0527

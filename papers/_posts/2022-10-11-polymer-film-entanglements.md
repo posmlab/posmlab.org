@@ -9,6 +9,7 @@ volume: 55
 issue: 19
 pages: "8505-8513"
 authors: "Bay RK, Zhang T, Shimomura S, Ilton M, Tanaka K, Riggleman RA, Crosby AJ"
+author_handles: [milton]
 image:
 redirect_from:
 fulltext: https://pubs.acs.org/doi/10.1021/acs.macromol.2c01435

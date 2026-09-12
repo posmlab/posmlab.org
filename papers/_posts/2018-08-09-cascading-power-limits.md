@@ -9,6 +9,7 @@ volume: 360
 issue: 6387
 pages: eaao1082
 authors: "Ilton M, Bhamla MS, Ma X, Cox SM, Fitchett LL, Kim Y, Koh JS, Krishnamurthy D, Kuo CY, Temel FZ, Crosby AJ, Prakash M, Sutton GP, Wood RJ, Azizi E, Bergbreiter S, Patek SN"
+author_handles: [milton]
 image: /assets/images/papers/cascading-power-limits.jpg
 redirect_from: /blog/2018/8/9/the-principles-of-cascading-power-limits-in-small-fast-biological-and-engineered-systems
 fulltext: https://www.science.org/doi/10.1126/science.aao1082

@@ -9,6 +9,7 @@ volume: 9
 issue: 1
 pages: 1172
 authors: "Ilton M, Salez T, Fowler PD, Rivetti M, Aly M, Benzaquen M, McGraw JD, Raphaël E, Dalnoki-Veress K, Bäumchen O"
+author_handles: [milton]
 image: /assets/images/papers/slip-inhibition.png
 redirect_from: /blog/2018/8/9/adsorption-induced-slip-inhibition-for-polymer-melts-on-ideal-substrates
 fulltext: https://www.nature.com/articles/s41467-018-03610-4

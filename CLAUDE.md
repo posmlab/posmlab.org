@@ -34,7 +34,9 @@ All content lives in `{category}/_posts/` directories with filenames `YYYY-MM-DD
 
 ### Content types and their key frontmatter fields:
 
-**Papers** (`papers/_posts/`): layout, title, year, shortref, nickname, journal, volume, issue, pages, authors, image, pdf, pdflink, fulltext, github, doi, pmid, pmcid, altmetric_id, preprint, embargo, published, category: paper
+**Papers** (`papers/_posts/`): layout, title, year, shortref, nickname, journal, volume, issue, pages, authors, author_handles, image, pdf, pdflink, fulltext, github, doi, pmid, pmcid, altmetric_id, preprint, embargo, published, category: paper
+
+`authors` is the full display string (`"Ilton M, Salez T, ..."`). `author_handles` is a separate list of the `handle`s of lab members on the paper (`author_handles: [acook, milton]`), and is what drives the Papers section of each member's page — fill it in on every new paper, using `[]` when no current team member is an author. Authorship is never inferred from the `authors` string: surnames and initials collide across unrelated researchers, and a bad guess credits a member with someone else's work.
 
 **Team members** (`team/_posts/`): layout: member, title (full name), position, handle, nickname, email, twitter, github, linkedin, scholar, image, alum (true/false), office_hours (`week_of` plus a `sessions` list containing `day`, `time`, and `location`)
 
@@ -67,7 +69,7 @@ News and blog posts link to papers via `/papers/paper/nickname` and to team memb
 ## Important Notes
 
 - The `published` field in paper frontmatter controls Jekyll rendering, not publication status; use `preprint` and `embargo` for that
-- The `handle` field on team members is used for cross-referencing (e.g., `author_handle` in news posts)
+- The `handle` field on team members is used for cross-referencing (e.g., `author_handle` in news posts, `author_handles` on papers)
 - Permalink format is `/:categories/:title` (no date in URLs)
 - Site contact/PI: Mark Ilton (milton@hmc.edu), Department of Physics, Harvey Mudd College. Lab location: Galileo B101.
 - `getinvolved.md` is the recruiting form; it posts to FormSubmit.co, which emails submissions directly — no backend in this repo.

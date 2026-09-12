@@ -9,6 +9,7 @@ volume:
 issue:
 pages:
 authors: "Chen A"
+author_handles: [achen]
 image: /assets/images/papers/viscoelastic-wave-propagation.png
 redirect_from:
 fulltext:

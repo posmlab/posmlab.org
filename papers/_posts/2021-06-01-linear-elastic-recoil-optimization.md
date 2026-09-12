@@ -9,6 +9,7 @@ volume:
 issue:
 pages:
 authors: "Gonzalez M"
+author_handles: []
 image:
 redirect_from:
 fulltext:

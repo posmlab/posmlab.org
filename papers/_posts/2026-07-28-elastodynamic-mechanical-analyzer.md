@@ -9,6 +9,7 @@ volume: "22"
 issue: 
 pages: "5368 - 5376"
 authors: "Zheng Y, Taghon MM, Freeburn GR, Birnbaum S, Van Den Berg J, Ilton M, Wood RJ, Patek SN, Crosby AJ"
+author_handles: [milton]
 image: /assets/images/papers/elastodynamic-mechanical-analyzer.png
 redirect_from:
 fulltext: https://pubs.rsc.org/en/content/articlelanding/2026/sm/d6sm00072j

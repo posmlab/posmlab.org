@@ -9,6 +9,7 @@ volume: 17
 issue: 168
 pages: "20200070"
 authors: "Divi S, Ma X, Ilton M, St Pierre R, Eslami B, Patek SN, Bergbreiter S"
+author_handles: [milton]
 image: /assets/images/papers/latch-based-control.png
 redirect_from: /blog/2020/7/22/latch-based-control
 fulltext: https://royalsocietypublishing.org/doi/10.1098/rsif.2020.0070

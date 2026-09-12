@@ -9,6 +9,7 @@ volume:
 issue:
 pages:
 authors: "Acker A"
+author_handles: [aacker]
 image: /assets/images/papers/tendon-viscoelastic-behavior.png
 redirect_from:
 fulltext:

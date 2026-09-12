@@ -9,6 +9,7 @@ volume: 15
 issue: 46
 pages: "9579-9586"
 authors: "Ilton M, Cox SM, Egelmeers T, Sutton GP, Patek SN, Crosby AJ"
+author_handles: [milton]
 image: /assets/images/papers/size-scale-elastic-energy-release.png
 redirect_from: /blog/2019/2/9/size-scaling-limits-of-impulsive-elastic-energy-release-from-a-resilin-like-elastomer
 fulltext: https://pubs.rsc.org/en/content/articlelanding/2019/sm/c9sm00870e

@@ -9,6 +9,7 @@ volume:
 issue:
 pages:
 authors: "Pérez-Marchant C"
+author_handles: [cperezmarchant]
 image:
 redirect_from:
 fulltext:
