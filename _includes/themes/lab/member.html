@@ -125,9 +125,21 @@
 			{% endif %}
 		</div>
 
-		{% assign lastname = member.title | split: ' ' | last %}
+		{% comment %}
+		Papers list authors as "Lastname I" (e.g. "Ilton M"), so match on surname plus
+		first initial rather than surname alone -- otherwise every member shares the
+		papers of any unrelated author with the same last name. Members whose published
+		name differs from their profile title can set `paper_author` in their front
+		matter to override the key (e.g. paper_author: "Zhang T").
+		{% endcomment %}
+		{% assign name_parts = member.title | split: ' ' %}
+		{% assign first_initial = name_parts.first | slice: 0, 1 %}
+		{% assign author_key = name_parts | last | append: ' ' | append: first_initial %}
+		{% if member.paper_author %}
+			{% assign author_key = member.paper_author %}
+		{% endif %}
 		{% for paper in site.categories.papers %}
-			{% if paper.authors contains lastname %}
+			{% if paper.authors contains author_key %}
 				{% assign papersq = true %}
 			{% endif %}
 		{% endfor %}
@@ -137,7 +149,7 @@
 			<div class="head">Papers</div>
 			<div class="spacer"></div>
 			{% for paper in site.categories.papers %}
-				{% if paper.authors contains lastname %}
+				{% if paper.authors contains author_key %}
 					{% if paper.embargo %}
 					<p>{{ paper.title }}
 					{% else %}
