@@ -56,6 +56,6 @@ alum: true
   needs to change.
 -->
 
-Amelia did her senior thesis on [characterizing the viscoelastic behavior of the bullfrog plantaris tendon][1].
+Amelia (she/her) graduated with a degree in physics and a focus in biophysics. She did her senior thesis on [characterizing the viscoelastic behavior of the bullfrog plantaris tendon][1]. When she is not working in the health physics sector, she enjoys TTRPGs, theatre, writing, and pretty much anything nerdy.
 
 [1]: {{ site.baseurl }}/papers/paper/tendon-viscoelastic-behavior
