@@ -1,0 +1,19 @@
+---
+layout: member
+title: "Charlotte Wong"
+position: "Undergraduate researcher (Physics + CS '29)"
+handle: charlotte-wong
+nickname: Char
+email: charwong@hmc.edu
+twitter:
+github: charlottewong328
+linkedin: charlottehailewong
+scholar:
+image: 
+alum: false
+office_hours:
+---
+
+{% include JB/setup %}
+
+Charlotte is a sophomore at Harvey Mudd College majoring in Engineering. In PoSM, she works on the mechanical redesign of recoil machine. Her interests lie in the intersection between mechanical and materials engineering. Outside of research, Charlotte can be found in the PVC working on rockets for the Mudd Amateur Rocketry Club, in the machine shop teaching frosh how to build their own hammers, or a random cafe somewhere in LA taste testing matcha. 
