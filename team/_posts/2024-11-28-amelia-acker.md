@@ -4,7 +4,7 @@ title: "Amelia Acker"
 position: "Former undergraduate researcher (Physics '26)"
 handle: aacker
 nickname: Amelia
-email:
+email: amelia.c.acker@gmail.com
 twitter:
 github:
 scholar:
