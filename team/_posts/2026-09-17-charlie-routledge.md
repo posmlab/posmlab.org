@@ -1,15 +1,15 @@
 ---
 layout: member
-title: “Charlie Routledge”
-position: "Undergraduate researcher (Engineering '29)”
-handle: croutledge
+title: "Charlie Routledge"
+position: "Undergraduate researcher (Engineering '29)"
+handle: croutledge 
 nickname: Charlie
-email: croutledge@hmc.edu
+email: croutledge@g.hmc.edu
 twitter:
 github: charles-routledge
 linkedin: charles-routledge
 scholar:
-image:
+image: 
 alum: false
 office_hours:
 ---
