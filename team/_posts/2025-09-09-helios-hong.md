@@ -13,9 +13,9 @@ image: /assets/images/team/helios-hong.jpg
 alum: false
 # OFFICE HOURS: Update the week and replace all sessions each week.
 office_hours:
-  week_of: "September 14th"
+  week_of: "September 21th"
   sessions:
-    - day: "Monday, September 14"
+    - day: "Monday, September 21"
       time: "6:00–7:00 p.m."
       location: "Galileo B101"
 ---
