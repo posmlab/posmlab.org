@@ -59,4 +59,4 @@ office_hours:
   needs to change.
 -->
 
-Cassidy is a sophomore physics major at Harvey Mudd College from Honolulu, Hawaii. She is interested in learning more about how materials behave and how to model complex systems. She is a also working as a grutor for Math 19 Lab. In her spare time, Cassidy enjoys playing the clarinet and doing her nails.  
+Cassidy is a sophomore physics major at Harvey Mudd College from Honolulu, Hawaii. She is interested in learning more about how materials behave and how to model complex systems. She is also working as a grutor for Math 19 Lab. In her spare time, Cassidy enjoys playing the clarinet and doing her nails.  
