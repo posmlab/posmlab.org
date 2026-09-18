@@ -59,4 +59,4 @@ office_hours:
   needs to change.
 -->
 
-Charlie Routledge is a sophomore at Harvey Mudd College planning to major in engineering. He is on the recoil-simulation sub-team of PoSM Lab and is interested in the intersection of materials science, physics simulations, and biomechanics. Outside of the lab, Charlie runs cross-country and distance track for Claremont-Mudd-Scripps and enjoys playing the guitar.
+Arjun Pemmasani is a junior at Harvey Mudd College majoring in Math. He is on the recoil-simulation sub-team of PoSM Lab and is interested in the intersection of Numerical Modelling, Deep Learning, and Causal/Statistical Inference. In his free time, he works on Math problems from https://peterkagey.com/problems/ and does pen and ink artwork.
