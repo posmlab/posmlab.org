@@ -11,12 +11,12 @@ scholar: bhT7jrwAAAAJ
 image: /assets/images/team/mark-ilton.jpg
 alum: false
 # OFFICE HOURS: To post hours, uncomment this block and update every value.
-office_hours:
- week_of: "September 7th"
- sessions:
-  - day: "Friday, September 11"
-    time: "10:00–11:00 a.m."
-    location: "Jacobs B132"
+#office_hours:
+# week_of: "September 7th"
+# sessions:
+#  - day: "Friday, September 11"
+#    time: "10:00–11:00 a.m."
+#    location: "Jacobs B132"
 ---
 {% include JB/setup %}
 
