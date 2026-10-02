@@ -63,4 +63,4 @@ alum: false
   needs to change.
 -->
 
-Sam is an undergraduate researcher in PoSM Lab.
+Sam is senior physics major writing his thesis in PoSM lab. He is interested in material design and synthesis, and the intersection it provides between physics and chemistry. His thesis work is focused on synthesizing entangled double network hydrogel systems with varying elastic properties controlled through the synthesis procedure. In his free time he enjoys TTRPGs, sketching, and general worldbuilding and storytelling. 
