@@ -35,6 +35,7 @@ This fall brings new faces alongside returning lab members. Here's our current s
 - [Cleo McHenry]({{ BASE_PATH }}/team/cleo-mchenry) — Engineering and Fine Arts, Class of 2029
 - [Charlotte Wong]({{ BASE_PATH }}/team/charlotte-wong) — Engineering, Class of 2029
 - [Ryan Yoo]({{ BASE_PATH }}/team/ryan-yoo) — Engineering, Class of 2029
+- [Jerrick Deng]({{ BASE_PATH }}/team/jerrick-deng) — Engineering, Class of 2030
 - Reagan Orkins
 
 ### Biomechanical modeling
