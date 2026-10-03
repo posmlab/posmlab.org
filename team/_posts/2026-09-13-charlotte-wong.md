@@ -11,7 +11,6 @@ linkedin: charlottehailewong
 scholar:
 image: /assets/images/team/charlotte_wong.jpg
 alum: false
-office_hours:
 ---
 
 {% include JB/setup %}

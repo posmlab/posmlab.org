@@ -11,7 +11,6 @@ linkedin: jerrick-deng-02493636a
 scholar:
 image:
 alum: false
-office_hours:
 ---
 
 {% include JB/setup %}

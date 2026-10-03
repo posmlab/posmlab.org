@@ -10,13 +10,6 @@ github:
 scholar:
 image:  /assets/images/team/cleo-mchenry.jpeg
 alum: false
-# OFFICE HOURS: Update the week and replace all sessions each week.
-office_hours:
-  week_of: "August 31st"
-  sessions:
-    - day: "Monday, August 31"
-      time: "6:00–8:00 p.m."
-      location: "Galileo B101"
 ---
 {% include JB/setup %}
 

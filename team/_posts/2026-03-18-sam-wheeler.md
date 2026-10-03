@@ -10,13 +10,6 @@ github:
 scholar:
 image:
 alum: false
-# OFFICE HOURS: To post hours, uncomment this block and update every value.
-# office_hours:
-#   week_of: "August 31st"
-#   sessions:
-#     - day: "Monday, August 31"
-#       time: "1:00–2:30 p.m."
-#       location: "Galileo B101"
 ---
 {% include JB/setup %}
 

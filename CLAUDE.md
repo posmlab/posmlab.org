@@ -38,7 +38,7 @@ All content lives in `{category}/_posts/` directories with filenames `YYYY-MM-DD
 
 `authors` is the full display string (`"Ilton M, Salez T, ..."`). `author_handles` is a separate list of the `handle`s of lab members on the paper (`author_handles: [acook, milton]`), and is what drives the Papers section of each member's page — fill it in on every new paper, using `[]` when no current team member is an author. Authorship is never inferred from the `authors` string: surnames and initials collide across unrelated researchers, and a bad guess credits a member with someone else's work.
 
-**Team members** (`team/_posts/`): layout: member, title (full name), position, handle, nickname, email, twitter, github, linkedin, scholar, image, alum (true/false), office_hours (`week_of` plus a `sessions` list containing `day`, `time`, and `location`)
+**Team members** (`team/_posts/`): layout: member, title (full name), position, handle, nickname, email, twitter, github, linkedin, scholar, image, alum (true/false)
 
 **News** (`news/_posts/`): layout: news, title, author, author_handle (links to team member), image, category: news
 

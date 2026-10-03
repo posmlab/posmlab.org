@@ -11,7 +11,6 @@ linkedin: oliver-howe
 scholar:
 image: /assets/images/team/oliver-howe.jpg
 alum: false
-office_hours:
 ---
 
 {% include JB/setup %}

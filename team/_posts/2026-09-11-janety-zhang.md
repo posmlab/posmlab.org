@@ -11,7 +11,6 @@ linkedin:
 scholar:
 image: /assets/images/team/janety-zhang.jpg
 alum: false
-office_hours:
 ---
 
 {% include JB/setup %}

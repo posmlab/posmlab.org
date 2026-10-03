@@ -11,7 +11,6 @@ linkedin:
 scholar:
 image: 
 alum: false
-office_hours:
 ---
 
 {% include JB/setup %}
